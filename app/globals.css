@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-noto-sans-jp), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-noto-serif-jp), ui-serif, serif;
+  --font-cormorant: var(--font-cormorant), serif;
+  --font-cinzel: var(--font-cinzel), serif;
+  
+  --color-primary: #d4a853;
+  --color-primary-foreground: #050505;
+  
+  --color-background: #050505;
+  --color-foreground: #f8fafc;
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-32 px-6 md:px-12 lg:px-24;
+  }
+  
+  .text-gold {
+    @apply text-[#d4a853];
+  }
+
+  /* Glassmorphism Utilities */
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .glass-card {
+    @apply bg-[#1e293b]/50 backdrop-blur-md border border-white/5 shadow-xl;
+  }
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide cursor on desktop */
+@media (min-width: 768px) {
+  html.cursor-none, html.cursor-none * {
+    cursor: none !important;
+  }
+  /* Restore cursor for iframes etc if needed */
+  iframe {
+    cursor: auto !important;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
