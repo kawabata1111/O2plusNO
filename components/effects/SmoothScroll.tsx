@@ -23,15 +23,14 @@ export default function SmoothScroll() {
 
     requestAnimationFrame(raf);
 
-    // Force resize calculation on content change
-    const resizeObserver = new ResizeObserver(() => {
-      lenis.resize();
-    });
-    resizeObserver.observe(document.body);
+    // Resize after content load to fix scroll height
+    const resizeTimer = setTimeout(() => {
+        lenis.resize();
+    }, 1000);
 
     return () => {
       lenis.destroy();
-      resizeObserver.disconnect();
+      clearTimeout(resizeTimer);
     };
   }, []);
 
