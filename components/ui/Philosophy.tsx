@@ -64,15 +64,15 @@ export default function Philosophy() {
                         </div>
                         
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight mb-4">
-                            <DecodeText text="DEFINE" className="block text-[#1e1e1e]" />
-                            <DecodeText text="YOUR TRUE" className="block text-[#1e1e1e]" />
+                            <DecodeText text="TRIGGER" className="block text-[#1e1e1e]" />
+                            <DecodeText text="TO FIND" className="block text-[#1e1e1e]" />
                             <span className="text-[#d4a853]">
-                                <DecodeText text="EXISTENCE" />
+                                <DecodeText text="YOUR TRUE SELF" />
                             </span>
                         </h2>
                         
                         <p className="text-base md:text-lg font-sans font-bold text-gray-500 mb-8 tracking-wide">
-                            本当の自分を、定義する。
+                            本当になりたい自分に出会えるキッカケを。
                         </p>
 
                         <div className="h-[1px] w-full bg-gray-200 mb-8 relative overflow-hidden">
