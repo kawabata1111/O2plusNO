@@ -30,9 +30,9 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 1.1 }}
                     animate={{ opacity: 0.05, scale: 1 }}
                     transition={{ duration: 2, ease: "easeOut" }}
-                    className="text-[20vw] font-cinzel font-bold text-white leading-none tracking-tighter whitespace-nowrap"
+                    className="text-[30vw] lg:text-[20vw] font-cinzel font-bold text-white leading-none tracking-tighter whitespace-nowrap"
                 >
-                    O2plusNO
+                    O2
                 </motion.div>
             </div>
 
@@ -65,19 +65,19 @@ export default function Hero() {
                 </div>
 
                 {/* Center: Main Message */}
-                <div className="lg:col-span-8 text-center lg:text-left">
+                <div className="lg:col-span-8 text-center lg:text-left flex flex-col items-center lg:items-start justify-center h-full pt-20 lg:pt-0">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="mb-8 inline-block"
+                        className="mb-6 lg:mb-8 inline-block"
                     >
-                        <span className="px-4 py-1 rounded-full border border-[#d4a853]/30 text-[#d4a853] text-[10px] tracking-[0.3em] uppercase bg-[#d4a853]/5 backdrop-blur-sm font-cinzel">
+                        <span className="px-4 py-1 rounded-full border border-[#d4a853]/30 text-[#d4a853] text-[9px] md:text-[10px] tracking-[0.3em] uppercase bg-[#d4a853]/5 backdrop-blur-sm font-cinzel">
                             Be Your True Self
                         </span>
                     </motion.div>
 
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight text-white mb-8 tracking-wide">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.2] lg:leading-tight text-white mb-8 tracking-wide">
                         <motion.span
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        className="text-white/70 text-sm md:text-base max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
+                        className="text-white/70 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
                     >
                         私たちは、一人ひとりが持つ可能性を信じています。<br className="hidden md:block"/>
                         自立した個人が互いに支え合う、温かく力強い社会へ。

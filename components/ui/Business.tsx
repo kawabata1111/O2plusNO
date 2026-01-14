@@ -50,7 +50,7 @@ const businesses = [
 
 export default function Business() {
     return (
-        <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
+        <section className="section-padding bg-white text-[#1e1e1e] relative overflow-hidden">
             
             {/* Tech Grid Background */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
@@ -60,7 +60,7 @@ export default function Business() {
                 }} 
             />
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="max-w-7xl mx-auto relative z-10">
                 
                 {/* Header */}
                 <motion.div 
@@ -68,27 +68,27 @@ export default function Business() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="flex justify-between items-end mb-32 border-b border-gray-200 pb-8"
+                    className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 md:mb-32 border-b border-gray-200 pb-8 gap-6"
                 >
                     <div>
-                        <h2 className="text-[#d4a853] text-xs font-bold tracking-[0.4em] uppercase mb-4 font-mono">
+                        <h2 className="text-[#d4a853] text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-mono">
                             // 02_BUSINESS_DOMAIN
                         </h2>
-                        <p className="text-4xl md:text-5xl font-bold tracking-tight leading-none mb-2">
+                        <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
                             CREATE VALUE<br/>
                             <span className="text-gray-300">MULTIFACETED</span>
                         </p>
-                        <p className="text-sm font-bold text-gray-500 tracking-wider">
+                        <p className="text-xs md:text-sm font-bold text-gray-500 tracking-wider mt-4">
                             多角的な視点で、価値を創造する。
                         </p>
                     </div>
-                    <div className="hidden md:block text-right font-mono text-xs text-gray-400">
+                    <div className="font-mono text-[10px] text-gray-400">
                         <p>STATUS: ACTIVE</p>
                         <p>NODES: 03</p>
                     </div>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
                     {businesses.map((item, index) => (
                         <div key={index} className="group relative">
                             {/* Prism Card */}
@@ -102,11 +102,8 @@ export default function Business() {
                                     clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)'
                                 }}
                             >
-                                {/* Prism Border Effect on Hover */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000 z-20 pointer-events-none" />
-                                
                                 {/* Image */}
-                                <div className="relative h-48 w-full overflow-hidden mb-6 bg-gray-200">
+                                <div className="relative h-48 md:h-56 w-full overflow-hidden mb-6 bg-gray-200">
                                      <Image 
                                         src={item.image} 
                                         alt={item.title} 
@@ -118,18 +115,18 @@ export default function Business() {
                                     </div>
                                 </div>
 
-                                <div className="px-6 pb-12">
+                                <div className="px-6 pb-16 md:pb-20">
                                     <p className="text-[10px] font-mono text-[#d4a853] mb-2 tracking-widest uppercase">
                                         {item.subtitle}
                                     </p>
                                     <h3 className="text-xl font-bold mb-1 group-hover:text-[#d4a853] transition-colors">
                                         {item.title}
                                     </h3>
-                                    <p className="text-sm font-bold text-gray-500 mb-6 border-b border-gray-200 pb-4 inline-block">
+                                    <p className="text-xs font-bold text-gray-500 mb-6 border-b border-gray-200 pb-4 inline-block">
                                         {item.jpTitle}
                                     </p>
                                     
-                                    <div className="space-y-4 mb-8 text-sm text-gray-600 font-sans leading-relaxed">
+                                    <div className="space-y-4 mb-8 text-xs md:text-sm text-gray-600 font-sans leading-relaxed">
                                         {item.desc.map((line, i) => (
                                             <p key={i}>{line}</p>
                                         ))}
@@ -142,15 +139,13 @@ export default function Business() {
                                         </div>
                                     )}
 
-                                    {item.link && (
-                                        <Link 
-                                            href={item.link} 
-                                            className="absolute bottom-0 right-0 bg-[#1e1e1e] text-white px-6 py-3 font-mono text-xs hover:bg-[#d4a853] transition-colors flex items-center gap-2"
-                                            style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0 100%)' }}
-                                        >
-                                            詳細を見る / VIEW <ArrowRight size={12} />
-                                        </Link>
-                                    )}
+                                    <Link 
+                                        href={item.link} 
+                                        className="absolute bottom-0 right-0 bg-[#1e1e1e] text-white px-6 py-3 font-mono text-[10px] md:text-xs hover:bg-[#d4a853] transition-colors flex items-center gap-2"
+                                        style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0 100%)' }}
+                                    >
+                                        詳細を見る / VIEW <ArrowRight size={12} />
+                                    </Link>
                                 </div>
                             </motion.div>
                         </div>
