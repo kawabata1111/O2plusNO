@@ -90,7 +90,7 @@ export default function ContactPage() {
                             <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#1e1e1e]" />
 
                             <form 
-                                action="https://formsubmit.co/o2plusno20171011@gmail.com" 
+                                action="https://formsubmit.co/kawabata06qb@gmail.com" 
                                 method="POST"
                                 className="space-y-8 relative z-10"
                             >
