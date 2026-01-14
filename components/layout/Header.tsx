@@ -32,22 +32,34 @@ export default function Header() {
         setIsOpen(false);
     }, [pathname]);
 
+    // メニュー展開時にスクロールをロック
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
+
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 right-0 z-[10000] transition-all duration-300 border-b border-transparent",
-                scrolled || pathname !== '/' 
+                "fixed top-0 left-0 right-0 z-[10000] transition-all duration-300 border-b",
+                !isOpen && (scrolled || pathname !== '/') 
                     ? "bg-white/90 backdrop-blur-md py-4 border-gray-200" 
-                    : "bg-transparent py-6"
+                    : "bg-transparent py-6 border-transparent"
             )}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 
                 {/* Logo */}
-                <Link href="/" className="relative z-50 group">
+                <Link href="/" className="relative z-50 group" onClick={() => isOpen && setIsOpen(false)}>
                     <span className={cn(
                         "text-xl md:text-2xl font-cinzel font-bold tracking-widest transition-colors",
-                        scrolled || pathname !== '/' ? "text-[#1e1e1e]" : "text-white"
+                        isOpen || scrolled || pathname !== '/' ? "text-[#1e1e1e]" : "text-white"
                     )}>
                         O2plusNO INC.
                     </span>
