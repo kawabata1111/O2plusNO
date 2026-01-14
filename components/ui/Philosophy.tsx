@@ -18,7 +18,7 @@ export default function Philosophy() {
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     
                     {/* Left: Decoding Heading */}
-                    <div className="flex flex-col justify-center order-2 lg:order-1">
+                    <div className="flex flex-col justify-center">
                         <div className="mb-6 flex items-center gap-2">
                             <span className="w-2 h-2 bg-[#d4a853] animate-pulse" />
                             <p className="font-mono text-[10px] tracking-widest text-gray-400">
@@ -49,7 +49,7 @@ export default function Philosophy() {
                     </div>
 
                     {/* Right: Technical Description */}
-                    <div className="flex flex-col justify-center space-y-8 md:space-y-12 order-1 lg:order-2 mb-8 lg:mb-0">
+                    <div className="flex flex-col justify-center space-y-8 md:space-y-12 mb-8 lg:mb-0">
                         <div>
                             <h3 className="font-mono text-[10px] text-gray-400 mb-4 border-l-2 border-[#d4a853] pl-4 uppercase tracking-widest">
                                 MISSION_STATEMENT / ミッション
