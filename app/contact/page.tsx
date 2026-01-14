@@ -96,7 +96,7 @@ export default function ContactPage() {
                                 className="space-y-8 relative z-10"
                             >
                                 {/* FormSubmit Configuration */}
-                                <input type="hidden" name="_next" value="https://o2plusno-site.netlify.app/" />
+                                <input type="hidden" name="_next" value="https://o2plusno-site.netlify.app/thanks" />
                                 <input type="hidden" name="_captcha" value="false" />
                                 <input type="text" name="_honey" style={{display: 'none'}} />
                                 <input type="hidden" name="_subject" value="【O2plusNO】お問い合わせがありました" />
