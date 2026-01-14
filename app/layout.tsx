@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import NoiseOverlay from "@/components/effects/NoiseOverlay";
 import CustomCursor from "@/components/effects/CustomCursor";
+import SmoothScroll from "@/components/effects/SmoothScroll";
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
@@ -60,6 +61,7 @@ export default function RootLayout({
           "antialiased bg-[#050505] text-white overflow-x-hidden selection:bg-[#d4a853] selection:text-[#050505]"
         )}
       >
+        <SmoothScroll />
         <NoiseOverlay />
         <CustomCursor />
         <Header />
