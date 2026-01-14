@@ -142,7 +142,7 @@ export default function ContactPage() {
                                 <motion.button
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="w-full bg-[#1e1e1e] text-white font-bold py-4 font-mono tracking-widest hover:bg-[#d4a853] transition-colors flex items-center justify-center gap-2 shadow-lg"
+                                    className="w-full bg-[#1e1e1e] text-white font-bold py-4 font-mono text-xs md:text-sm tracking-widest hover:bg-[#d4a853] transition-colors flex items-center justify-center gap-2 shadow-lg whitespace-nowrap"
                                     type="submit"
                                 >
                                     [ TRANSMIT_DATA ] <Send size={16} />

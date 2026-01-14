@@ -57,15 +57,14 @@ export default function Contact() {
                         </p>
 
                         <Link href="/contact" passHref>
-                            <motion.button
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
-                                className="group relative inline-flex items-center justify-center gap-4 bg-[#1e1e1e] text-white px-16 py-5 mb-16 font-mono text-sm tracking-widest hover:bg-[#d4a853] transition-colors duration-300"
-                            >
-                                <span className="relative z-10">[ 送信する / EXECUTE ]</span>
-                                <div className="absolute inset-0 border border-white opacity-20 group-hover:opacity-0 transition-opacity" />
-                            </motion.button>
-                        </Link>
+                                                    <motion.button
+                                                        whileHover={{ scale: 1.02 }}
+                                                        whileTap={{ scale: 0.98 }}
+                                                        className="group relative inline-flex items-center justify-center gap-2 md:gap-4 bg-[#1e1e1e] text-white px-8 md:px-16 py-5 mb-16 font-mono text-xs md:text-sm tracking-widest hover:bg-[#d4a853] transition-colors duration-300 whitespace-nowrap"
+                                                    >
+                                                        <span className="relative z-10">[ 送信する / EXECUTE ]</span>
+                                                        <div className="absolute inset-0 border border-white opacity-20 group-hover:opacity-0 transition-opacity" />
+                                                    </motion.button>                        </Link>
 
                         <div className="grid md:grid-cols-2 gap-8 border-t border-gray-200 pt-12 text-left">
                             <div className="group cursor-pointer">
