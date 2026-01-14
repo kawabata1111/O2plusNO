@@ -64,9 +64,14 @@ export default function RootLayout({
         <SmoothScroll />
         <NoiseOverlay />
         <CustomCursor />
-        <Header />
-        {children}
-        <Footer />
+        
+        <div className="flex flex-col min-h-screen relative">
+          <Header />
+          <div className="flex-grow">
+            {children}
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
