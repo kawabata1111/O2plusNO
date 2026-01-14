@@ -46,8 +46,15 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-white/5 pt-8 text-center text-[10px] text-gray-600 tracking-widest uppercase">
-                    &copy; {new Date().getFullYear()} O2plusNO INC. All Rights Reserved.
+                <div className="border-t border-white/5 pt-8 text-center">
+                    <div className="mb-4">
+                        <a href="/privacy" className="text-[10px] text-gray-500 hover:text-[#d4a853] transition-colors tracking-widest uppercase">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <p className="text-[10px] text-gray-600 tracking-widest uppercase">
+                        &copy; {new Date().getFullYear()} O2plusNO. All Rights Reserved.
+                    </p>
                 </div>
             </div>
         </footer>
