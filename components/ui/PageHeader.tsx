@@ -90,12 +90,12 @@ export default function PageHeader({ title, subtitle, enTitle }: PageHeaderProps
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
-                    className="absolute bottom-[-60px] md:bottom-[-80px] left-0 w-full flex justify-between items-center text-[9px] font-mono text-gray-400 border-t border-gray-200 pt-4"
+                    className="absolute bottom-4 md:bottom-8 left-0 w-full px-6 flex justify-between items-center text-[9px] font-mono text-gray-400 border-t border-gray-200 pt-4"
                 >
                     <div className="flex gap-2">
                         <Link href="/" className="hover:text-[#d4a853] transition-colors">HOME</Link>
                         <span>/</span>
-                        <span className="text-[#1e1e1e]">{enTitle}</span>
+                        <span className="text-[#1e1e1e] truncate max-w-[150px]">{enTitle}</span>
                     </div>
                     <div className="hidden sm:block uppercase">
                         SESSION_ID: {Math.random().toString(36).substr(2, 6).toUpperCase()}
