@@ -12,10 +12,10 @@ export default function Hero() {
                     src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
                     alt="Background"
                     fill
-                    className="object-cover opacity-30"
+                    className="object-cover opacity-50 md:opacity-40"
                     priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-[#050505]/60 to-[#050505]" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/70 via-[#050505]/50 to-[#050505]" />
             </div>
 
             {/* 1. Aurora Background Effect */}
