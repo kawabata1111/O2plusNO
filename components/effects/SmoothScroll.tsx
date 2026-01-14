@@ -23,8 +23,15 @@ export default function SmoothScroll() {
 
     requestAnimationFrame(raf);
 
+    // Force resize calculation on content change
+    const resizeObserver = new ResizeObserver(() => {
+      lenis.resize();
+    });
+    resizeObserver.observe(document.body);
+
     return () => {
       lenis.destroy();
+      resizeObserver.disconnect();
     };
   }, []);
 
