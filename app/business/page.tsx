@@ -14,24 +14,28 @@ const businesses = [
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
         description: (
             <>
-                <p className="mb-6">
+                <p className="mb-8 font-light leading-relaxed">
                     eBayを活用したグローバルな物販事業を展開しています。<br/>
                     「日本の価値を世界へ」をテーマに、主に以下の2つの軸で事業を行っています。
                 </p>
-                <ul className="space-y-4 mb-6">
-                    <li className="flex items-start gap-3">
-                        <CheckCircle size={18} className="text-[#d4a853] mt-1 flex-shrink-0" />
-                        <span>
-                            <strong className="block text-[#1e1e1e]">日本製中古品の輸出</strong>
-                            <span className="text-sm text-gray-500">主に中古カメラなどの精密機器を中心に、品質の高い日本製品を海外市場へ届けています。</span>
-                        </span>
+                <ul className="space-y-6 mb-8">
+                    <li className="group">
+                        <div className="flex items-start gap-4">
+                            <span className="w-1 h-12 bg-[#d4a853] flex-shrink-0 transition-transform group-hover:scale-y-110" />
+                            <div>
+                                <strong className="block text-[#1e1e1e] text-lg font-bold mb-1 tracking-tight">日本製中古品の輸出</strong>
+                                <span className="text-sm text-gray-500 font-light">主に中古カメラなどの精密機器を中心に、品質の高い日本製品を海外市場へ届けています。</span>
+                            </div>
+                        </div>
                     </li>
-                    <li className="flex items-start gap-3">
-                        <CheckCircle size={18} className="text-[#d4a853] mt-1 flex-shrink-0" />
-                        <span>
-                            <strong className="block text-[#1e1e1e]">アメリカ国内物販</strong>
-                            <span className="text-sm text-gray-500">eBayのプラットフォームを最大限に活用し、米国国内での流通・販売も実施しています。</span>
-                        </span>
+                    <li className="group">
+                        <div className="flex items-start gap-4">
+                            <span className="w-1 h-12 bg-[#d4a853] flex-shrink-0 transition-transform group-hover:scale-y-110" />
+                            <div>
+                                <strong className="block text-[#1e1e1e] text-lg font-bold mb-1 tracking-tight">アメリカ国内物販</strong>
+                                <span className="text-sm text-gray-500 font-light">eBayのプラットフォームを最大限に活用し、米国国内での流通・販売も実施しています。</span>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </>
@@ -45,22 +49,21 @@ const businesses = [
         link: "https://o2plusno.com/product/",
         description: (
             <>
-                <p className="mb-6">
+                <p className="mb-8 font-light leading-relaxed">
                     在宅ワークに特化したコンサルティングを<strong className="text-[#d4a853]">【 完全無料 】</strong>で提供しています。<br/>
                     eBay物販やアフィリエイトを応用したポイ活など、スキルゼロからでも自立できるノウハウを指導。<br/>
-                    これまでに<strong className="border-b border-[#d4a853]">累計2,500名以上</strong>の方をサポートしてきました。
+                    これまでに<strong className="border-b-2 border-[#d4a853] pb-1">累計2,500名以上</strong>の方をサポートしてきました。
                 </p>
-                <div className="bg-gray-50 p-6 border border-gray-200 mb-6 text-sm">
-                    <p className="font-bold mb-2">無料相談実施中</p>
-                    <p className="text-gray-600 mb-4">
+                <div className="bg-gray-50 p-8 border-l-4 border-[#1e1e1e] mb-8 relative">
+                    <div className="absolute top-2 right-2 text-[10px] font-mono text-gray-300">NOTICE_FILE</div>
+                    <p className="font-bold text-[#1e1e1e] mb-2 font-mono text-xs tracking-widest">// FREE_CONSULTATION</p>
+                    <p className="text-gray-600 mb-6 text-sm">
                         初期費用などは一切かかりません。まずはお気軽にご相談ください。
                     </p>
-                    <div className="flex items-start gap-2 text-red-500 text-xs bg-red-50 p-3 border border-red-100">
-                        <AlertTriangle size={14} className="mt-0.5 flex-shrink-0" />
-                        <p>
-                            <strong>注意喚起：</strong><br/>
-                            最近、弊社の社名を使用したネガティブマーケティングが発生しております。<br/>
-                            悪質なサービスや詐欺に誘導される可能性があるため、不審な記事にはご注意ください。
+                    <div className="pt-6 border-t border-gray-200">
+                        <p className="text-red-600 text-xs font-bold leading-relaxed">
+                            <span className="inline-block px-2 py-0.5 bg-red-600 text-white mr-2">ATTENTION</span><br/>
+                            最近、弊社の社名を使用したネガティブマーケティングが発生しております。悪質なサービスや詐欺などに誘導される可能性があるため、不審な記事にはご注意ください。
                         </p>
                     </div>
                 </div>
@@ -74,28 +77,30 @@ const businesses = [
         image: "/images/business-sales.png",
         description: (
             <>
-                <p className="mb-6">
-                    代表自身の<strong className="text-[#1e1e1e]">元SEとしての経験</strong>を活かし、SE業界専門の営業代理を行っています。<br/>
+                <p className="mb-8 font-light leading-relaxed">
+                    代表自身の<strong className="text-[#1e1e1e] font-bold">元SEとしての経験</strong>を活かし、SE業界専門の営業代理を行っています。<br/>
                     業界20年以上の「1次請け企業」と協業し、以下のサービスを展開中です。
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div className="bg-white p-4 shadow-sm border border-gray-100">
-                        <h4 className="font-bold text-[#1e1e1e] mb-2 border-l-2 border-[#d4a853] pl-3">未経験SEサービス</h4>
-                        <p className="text-xs text-gray-500 leading-relaxed">
-                            SE業界未経験の方でも、全くスキルのない状態から<strong className="text-[#d4a853]">正社員SE</strong>を目指せるキャリアパスを提供します。
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-white p-6 shadow-sm border border-gray-100 group hover:border-[#d4a853] transition-colors">
+                        <p className="text-[#d4a853] font-mono text-[10px] mb-2 tracking-widest">TYPE_A</p>
+                        <h4 className="font-bold text-[#1e1e1e] text-lg mb-2">未経験SEサービス</h4>
+                        <p className="text-xs text-gray-500 leading-relaxed font-light">
+                            SE業界未経験の方でも、全くスキルのない状態から正社員SEを目指せるキャリアパスを提供します。
                         </p>
                     </div>
-                    <div className="bg-white p-4 shadow-sm border border-gray-100">
-                        <h4 className="font-bold text-[#1e1e1e] mb-2 border-l-2 border-[#d4a853] pl-3">フリーランスSES</h4>
-                        <p className="text-xs text-gray-500 leading-relaxed">
-                            現役SEの方に<strong className="text-[#d4a853]">「1次請け」と直接契約</strong>できるルートをご案内。<br/>
-                            無駄な仲介手数料を省き、年収の飛躍的な向上を支援します。
+                    <div className="bg-white p-6 shadow-sm border border-gray-100 group hover:border-[#d4a853] transition-colors">
+                        <p className="text-[#d4a853] font-mono text-[10px] mb-2 tracking-widest">TYPE_B</p>
+                        <h4 className="font-bold text-[#1e1e1e] text-lg mb-2">フリーランスSES</h4>
+                        <p className="text-xs text-gray-500 leading-relaxed font-light">
+                            現役SEの方に「1次請け」と直接契約できるルートをご案内。仲介手数料を省き、年収向上を支援します。
                         </p>
                     </div>
                 </div>
-                <p className="text-sm text-gray-500">
-                    どちらも無料でご相談いただけます。キャリアアップを目指す方はぜひお問い合わせください。
-                </p>
+                <div className="flex items-center gap-2 font-mono text-[10px] text-gray-400">
+                    <span className="w-1.5 h-1.5 bg-[#d4a853] rounded-full animate-ping" />
+                    <span>CONSULTATION_AVAILABLE: FREE_OF_CHARGE</span>
+                </div>
             </>
         )
     }
