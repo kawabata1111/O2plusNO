@@ -77,30 +77,30 @@ export default function Hero() {
                         </span>
                     </motion.div>
 
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.2] lg:leading-tight text-white mb-8 tracking-wide">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-medium leading-[1.2] lg:leading-tight text-white mb-8 tracking-wide">
                         <motion.span
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            className="block"
+                            className="block font-cormorant italic"
                         >
-                            本当になりたい
+                            Prove Your
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className="block mt-2"
+                            className="block mt-2 text-[#d4a853] font-cinzel"
                         >
-                            自分に出会える
+                            POTENTIAL
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.8 }}
-                            className="block mt-4 text-[#d4a853] font-cormorant italic pr-2"
+                            className="block mt-6 text-2xl md:text-3xl lg:text-4xl font-sans font-bold tracking-widest text-white/90"
                         >
-                            キッカケを。
+                            可能性を、証明する。
                         </motion.span>
                     </h1>
 
@@ -110,8 +110,9 @@ export default function Hero() {
                         transition={{ duration: 1, delay: 1.2 }}
                         className="text-white/70 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
                     >
-                        私たちは、一人ひとりが持つ可能性を信じています。<br className="hidden md:block"/>
-                        自立した個人が互いに支え合う、温かく力強い社会へ。
+                        自立した個人が互いに支え合い、<br className="hidden md:block"/>
+                        その力を社会への貢献へと繋げていく。<br className="hidden md:block"/>
+                        私たちは、あなたの挑戦を全力で支援します。
                     </motion.p>
                 </div>
 
