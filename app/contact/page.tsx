@@ -28,11 +28,12 @@ export default function ContactPage() {
                         
                         {/* Left: Contact Info (Data Panel) */}
                         <motion.div
+                            id="form-start"
+                            className="scroll-mt-32 flex flex-col justify-center"
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            className="flex flex-col justify-center"
                         >
                             <div className="mb-12">
                                 <h2 className="text-[#d4a853] font-bold tracking-[0.4em] uppercase mb-6 text-xs font-mono">

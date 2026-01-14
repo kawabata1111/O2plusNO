@@ -80,7 +80,7 @@ export default function Header() {
                         </Link>
                     ))}
                     <Link
-                        href="/contact"
+                        href="/contact#form-start"
                         className={cn(
                             "px-6 py-2 text-xs font-bold tracking-widest rounded-sm transition-colors border font-mono",
                             scrolled || pathname !== '/' 
@@ -164,13 +164,13 @@ export default function Header() {
                                 transition={{ delay: 0.5, duration: 0.5 }}
                                 className="pt-8 border-t border-gray-200"
                             >
-                                <Link
-                                    href="/contact"
-                                    onClick={() => setIsOpen(false)}
-                                    className="block w-full text-center bg-[#1e1e1e] text-white py-4 font-mono text-sm tracking-widest hover:bg-[#d4a853] transition-colors"
-                                >
-                                    [ CONTACT / 相談 ]
-                                </Link>
+                        
+                        <Link
+                            href="/contact#form-start"
+                            className="text-xl font-mono font-bold tracking-widest text-white bg-[#1e1e1e] px-8 py-3 mt-4 hover:bg-[#d4a853] transition-colors"
+                        >
+                            CONTACT / 相談
+                        </Link>
                             </motion.div>
                         </div>
 
