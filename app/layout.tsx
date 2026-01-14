@@ -65,13 +65,9 @@ export default function RootLayout({
         <NoiseOverlay />
         <CustomCursor />
         
-        <div className="flex flex-col min-h-screen relative">
-          <Header />
-          <div className="flex-grow">
-            {children}
-          </div>
-          <Footer />
-        </div>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

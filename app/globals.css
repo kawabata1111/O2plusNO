@@ -35,6 +35,8 @@
 /* Base Styles */
 html {
   scroll-padding-top: 100px;
+  height: auto;
+  overflow-y: scroll; /* Ensure scrollbar always exists to prevent layout shift */
 }
 
 body {
@@ -43,6 +45,14 @@ body {
   font-feature-settings: "palt";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure footer stays at bottom if content is short */
+body > footer {
+  margin-top: auto;
 }
 
 /* Hide cursor on desktop */
