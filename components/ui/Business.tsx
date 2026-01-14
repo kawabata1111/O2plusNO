@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Globe, Home, Users, ArrowRight, AlertTriangle } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import DecodeText from './DecodeText';
 
 const businesses = [
     {

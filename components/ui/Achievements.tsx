@@ -2,6 +2,7 @@
 
 import { motion, useSpring, useTransform, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
+import DecodeText from './DecodeText';
 
 function Counter({ from, to }: { from: number; to: number }) {
     const ref = useRef(null);
@@ -54,7 +55,7 @@ export default function Achievements() {
                     </div>
                     
                     <h2 className="text-[10px] font-mono tracking-[0.3em] mb-8 md:mb-12 text-gray-400 uppercase">
-                        // TOTAL_ACHIEVEMENTS_DATA
+                        // <DecodeText text="TOTAL_ACHIEVEMENTS_DATA" /> / <span className="text-[#1e1e1e] font-bold">実績データ</span>
                     </h2>
                     
                     <div className="relative inline-block py-8 px-10 md:py-10 md:px-20 border-y border-gray-100 bg-white/80 backdrop-blur-sm">
@@ -69,7 +70,7 @@ export default function Achievements() {
                             <span className="text-3xl md:text-5xl lg:text-6xl text-[#d4a853] ml-2">+</span>
                         </div>
                         <p className="text-[10px] font-mono text-gray-400 mt-2 uppercase tracking-widest">
-                            USERS_SUPPORTED / <span className="text-[#1e1e1e] font-bold">累計サポート人数</span>
+                            <DecodeText text="USERS_SUPPORTED" /> / <span className="text-[#1e1e1e] font-bold">累計サポート人数</span>
                         </p>
                     </div>
 

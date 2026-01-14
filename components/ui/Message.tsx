@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import DecodeText from './DecodeText';
 
 const GlitchImage = () => {
     const [isGlitching, setIsGlitching] = useState(false);
@@ -76,12 +77,15 @@ export default function Message() {
                         <div className="flex items-center gap-2 mb-8">
                             <span className="w-2 h-2 bg-[#d4a853] rounded-full animate-pulse" />
                             <p className="font-mono text-[10px] tracking-widest text-gray-500 uppercase">
-                                [ SYSTEM_MSG: 代表メッセージ ]
+                                [ SYSTEM_MSG: <DecodeText text="MESSAGE" className="inline-block" /> / 代表メッセージ ]
                             </p>
                         </div>
                         
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-4 leading-none uppercase">
-                            Change<br/>the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4a853] to-yellow-600">Future</span>
+                            <DecodeText text="CHANGE" className="block" />
+                            <DecodeText text="THE" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4a853] to-yellow-600">
+                                <DecodeText text="FUTURE" />
+                            </span>
                         </h2>
                         <p className="text-base md:text-lg font-bold text-[#1e1e1e] mb-10 md:mb-12 tracking-wider">
                             未来を変える、勇気を。

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import DecodeText from './DecodeText';
 
 export default function Contact() {
     return (
@@ -42,7 +43,8 @@ export default function Contact() {
                         </h2>
                         
                         <p className="text-4xl md:text-5xl font-bold tracking-tighter mb-8 leading-none">
-                            INITIATE<br/>CONNECTION
+                            <DecodeText text="INITIATE" className="block" />
+                            <DecodeText text="CONNECTION" />
                         </p>
                         
                         <p className="text-gray-500 mb-16 font-sans text-sm max-w-md mx-auto leading-loose tracking-wide">

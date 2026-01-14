@@ -1,3 +1,5 @@
+import DecodeText from '@/components/ui/DecodeText';
+
 export default function Footer() {
     return (
         <footer className="relative z-50 bg-[#020202] text-white py-16 border-t border-white/5">
@@ -7,7 +9,7 @@ export default function Footer() {
                     {/* Company Info Header */}
                     <div>
                         <h2 className="text-2xl font-cinzel font-bold mb-6 tracking-widest text-[#d4a853]">
-                            O2plusNO INC.
+                            <DecodeText text="O2plusNO INC." />
                         </h2>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6 font-light">
                             自分の力で生き抜ける人を増やし、<br/>
