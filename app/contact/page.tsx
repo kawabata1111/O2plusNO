@@ -89,13 +89,25 @@ export default function ContactPage() {
                             <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#1e1e1e]" />
                             <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#1e1e1e]" />
 
-                            <form className="space-y-8 relative z-10">
+                            <form 
+                                action="https://formsubmit.co/o2plusno20171011@gmail.com" 
+                                method="POST"
+                                className="space-y-8 relative z-10"
+                            >
+                                {/* FormSubmit Configuration */}
+                                <input type="hidden" name="_next" value="https://o2plusno-site.netlify.app/" />
+                                <input type="hidden" name="_captcha" value="false" />
+                                <input type="text" name="_honey" style={{display: 'none'}} />
+                                <input type="hidden" name="_subject" value="【O2plusNO】お問い合わせがありました" />
+
                                 <div className="space-y-2 group">
                                     <label className="text-xs font-mono text-[#d4a853] tracking-widest block mb-1">
                                         // INPUT: YOUR_NAME <span className="text-red-500">*</span>
                                     </label>
                                     <input 
                                         type="text" 
+                                        name="name"
+                                        required
                                         className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#d4a853] focus:bg-white outline-none transition-all text-[#1e1e1e] placeholder-gray-400" 
                                         placeholder="_" 
                                     />
@@ -107,6 +119,8 @@ export default function ContactPage() {
                                     </label>
                                     <input 
                                         type="email" 
+                                        name="email"
+                                        required
                                         className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#d4a853] focus:bg-white outline-none transition-all text-[#1e1e1e] placeholder-gray-400" 
                                         placeholder="_" 
                                     />
@@ -118,6 +132,8 @@ export default function ContactPage() {
                                     </label>
                                     <textarea 
                                         rows={5} 
+                                        name="message"
+                                        required
                                         className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#d4a853] focus:bg-white outline-none transition-all resize-none text-[#1e1e1e] placeholder-gray-400" 
                                         placeholder="_"
                                     ></textarea>
@@ -127,6 +143,7 @@ export default function ContactPage() {
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     className="w-full bg-[#1e1e1e] text-white font-bold py-4 font-mono tracking-widest hover:bg-[#d4a853] transition-colors flex items-center justify-center gap-2 shadow-lg"
+                                    type="submit"
                                 >
                                     [ TRANSMIT_DATA ] <Send size={16} />
                                 </motion.button>
