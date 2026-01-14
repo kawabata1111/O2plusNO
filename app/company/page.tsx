@@ -76,8 +76,8 @@ export default function CompanyPage() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="mt-24 relative"
                     >
-                        <div className="flex items-center justify-between mb-8">
-                            <h2 className="text-2xl font-bold tracking-tight">ACCESS / <span className="text-[#d4a853]">アクセス</span></h2>
+                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                            <h2 className="text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap">ACCESS / <span className="text-[#d4a853]">アクセス</span></h2>
                             <div className="font-mono text-xs text-gray-400">COORDINATES: 35.788, 139.578</div>
                         </div>
                         
