@@ -73,11 +73,13 @@ export default function Business() {
                 >
                     <div>
                         <h2 className="text-[#d4a853] text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-mono">
-                            // 02_BUSINESS_DOMAIN
+                            // <DecodeText text="OUR BUSINESS" />
                         </h2>
                         <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                            CREATE VALUE<br/>
-                            <span className="text-gray-300">MULTIFACETED</span>
+                            <DecodeText text="CREATE VALUE" className="block" />
+                            <span className="text-gray-300">
+                                <DecodeText text="MULTIFACETED" />
+                            </span>
                         </p>
                         <p className="text-xs md:text-sm font-bold text-gray-500 tracking-wider mt-4">
                             多角的な視点で、価値を創造する。
