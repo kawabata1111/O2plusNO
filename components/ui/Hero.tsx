@@ -77,20 +77,41 @@ export default function Hero() {
                         </span>
                     </motion.div>
 
-                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-serif font-medium leading-[1.4] lg:leading-relaxed text-white mb-8 tracking-wide max-w-4xl">
-                        自分の力で生き抜ける人を増やし、<br className="hidden md:block"/>
-                        その力を<span className="text-[#d4a853] font-cormorant italic pr-2">利他</span>に向けることができる<br className="hidden md:block"/>
-                        社会の創造。
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.2] lg:leading-tight text-white mb-8 tracking-wide">
+                        <motion.span
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.4 }}
+                            className="block"
+                        >
+                            本当になりたい
+                        </motion.span>
+                        <motion.span
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.6 }}
+                            className="block mt-2"
+                        >
+                            自分に出会える
+                        </motion.span>
+                        <motion.span
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.8 }}
+                            className="block mt-4 text-[#d4a853] font-cormorant italic pr-2"
+                        >
+                            キッカケを。
+                        </motion.span>
                     </h1>
 
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        className="text-white/70 text-xs md:text-sm lg:text-base max-w-xs md:max-w-2xl mx-auto lg:mx-0 leading-loose font-light tracking-wide"
+                        className="text-white/70 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
                     >
-                        O2plusNOは、単なるビジネスの成功だけでなく、
-                        精神的な豊かさと、他者への貢献が循環するエコシステムを目指しています。
+                        私たちは、一人ひとりが持つ可能性を信じています。<br className="hidden md:block"/>
+                        自立した個人が互いに支え合う、温かく力強い社会へ。
                     </motion.p>
                 </div>
 

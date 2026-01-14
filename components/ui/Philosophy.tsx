@@ -64,15 +64,15 @@ export default function Philosophy() {
                         </div>
                         
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight mb-4">
-                            <DecodeText text="FIND YOUR" className="block text-[#1e1e1e]" />
-                            <DecodeText text="TRUE SELF" className="block text-[#1e1e1e]" />
+                            <DecodeText text="DEFINE" className="block text-[#1e1e1e]" />
+                            <DecodeText text="YOUR TRUE" className="block text-[#1e1e1e]" />
                             <span className="text-[#d4a853]">
-                                <DecodeText text="TRIGGER" />
+                                <DecodeText text="EXISTENCE" />
                             </span>
                         </h2>
                         
                         <p className="text-base md:text-lg font-sans font-bold text-gray-500 mb-8 tracking-wide">
-                            本当になりたい自分に出会えるキッカケを。
+                            本当の自分を、定義する。
                         </p>
 
                         <div className="h-[1px] w-full bg-gray-200 mb-8 relative overflow-hidden">
@@ -89,12 +89,12 @@ export default function Philosophy() {
                     <div className="flex flex-col justify-center space-y-8 md:space-y-12 order-1 lg:order-2 mb-8 lg:mb-0">
                         <div>
                             <h3 className="font-mono text-[10px] text-gray-400 mb-4 border-l-2 border-[#d4a853] pl-4 uppercase tracking-widest">
-                                CORPORATE_SLOGAN / スローガン
+                                MISSION_STATEMENT / ミッション
                             </h3>
                             <p className="text-lg md:text-xl font-bold font-sans leading-relaxed text-[#1e1e1e]">
-                                私たちは、一人ひとりが持つ可能性を信じています。<br/>
-                                自立した個人が互いに支え合う、<br/>
-                                温かく力強い社会へ。
+                                自分の力で生き抜ける人を増やし、<br/>
+                                その力を利他に向けることができる<br/>
+                                社会の創造。
                             </p>
                         </div>
 
@@ -106,9 +106,14 @@ export default function Philosophy() {
                             </div>
                             
                             <p className="text-xs md:text-sm text-gray-600 leading-loose font-sans text-justify">
+                                私たちは、一人ひとりが持つ可能性を信じています。<br/>
                                 現代社会において「自立」とは単に経済的な成功だけを指すのではありません。<br/>
                                 自分の意志で選択し、その選択に責任を持ち、そして得た力を他者のために使うこと。<br/>
-                                O2plusNOは、そのための羅針盤となります。
+                                <br/>
+                                <span className="text-[10px] text-gray-400 font-mono block mt-2">
+                                    {`> We believe in individual potential.`}<br/>
+                                    {`> Independence is not just economic success.`}
+                                </span>
                             </p>
                             
                             <div className="mt-6 flex gap-1">
