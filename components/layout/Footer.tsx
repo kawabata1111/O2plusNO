@@ -42,24 +42,6 @@ export default function Footer() {
                                 Email: o2plusno20171011@gmail.com
                             </dd>
 
-                            <dt className="font-medium text-gray-500 sm:border-r sm:border-white/10 sm:pr-4">創業</dt>
-                            <dd>2017年10月11日</dd>
-
-                            <dt className="font-medium text-gray-500 sm:border-r sm:border-white/10 sm:pr-4">資本金</dt>
-                            <dd>200万円 (2026年1月6日現在)</dd>
-
-                            <dt className="font-medium text-gray-500 sm:border-r sm:border-white/10 sm:pr-4">事業内容</dt>
-                            <dd>輸出物販事業、各種コンサルティング業務、営業代行事業</dd>
-
-                            <dt className="font-medium text-gray-500 sm:border-r sm:border-white/10 sm:pr-4">従業員数</dt>
-                            <dd>0名 (業務委託者数 25名) <span className="text-xs text-gray-600 block mt-0.5">※2026年1月6日現在</span></dd>
-
-                            <dt className="font-medium text-gray-500 sm:border-r sm:border-white/10 sm:pr-4">主要取引銀行</dt>
-                            <dd>みずほ銀行</dd>
-
-                            <dt className="font-medium text-gray-500 sm:border-r sm:border-white/10 sm:pr-4">許可証</dt>
-                            <dd>古物商許可番号 第431040060720号</dd>
-
                         </dl>
                     </div>
                 </div>
