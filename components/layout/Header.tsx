@@ -96,38 +96,76 @@ export default function Header() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 md:hidden"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.4 }}
+                        className="fixed inset-0 bg-[#fafaf9] z-[10001] flex flex-col justify-center px-8 md:hidden"
                     >
-                        {/* Tech Grid Background for Mobile Menu */}
+                        {/* Tech Grid Background */}
                         <div className="absolute inset-0 pointer-events-none opacity-[0.05]" 
                             style={{ 
                                 backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
                                 backgroundSize: '40px 40px' 
                             }} 
                         />
-
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.path}
-                                href={item.path}
-                                className={cn(
-                                    "text-2xl font-serif font-bold tracking-widest transition-colors hover:text-[#d4a853]",
-                                    pathname === item.path ? "text-[#d4a853]" : "text-[#1e1e1e]"
-                                )}
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
                         
-                        <Link
-                            href="/contact"
-                            className="text-xl font-mono font-bold tracking-widest text-white bg-[#1e1e1e] px-8 py-3 mt-4 hover:bg-[#d4a853] transition-colors"
+                        {/* Close Button (Absolute position for easy access) */}
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            className="absolute top-6 right-6 p-2 text-[#1e1e1e] hover:text-[#d4a853] transition-colors z-50"
                         >
-                            CONTACT / 相談
-                        </Link>
+                            <X size={32} />
+                        </button>
+
+                        <div className="space-y-8 relative z-10">
+                            {navItems.map((item, index) => (
+                                <motion.div
+                                    key={item.path}
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -20 }}
+                                    transition={{ delay: 0.1 + index * 0.1, duration: 0.5 }}
+                                >
+                                    <Link
+                                        href={item.path}
+                                        onClick={() => setIsOpen(false)}
+                                        className="group flex items-end gap-4"
+                                    >
+                                        <span className="text-xs font-mono text-[#d4a853] mb-2 tracking-widest">
+                                            0{index + 1}
+                                        </span>
+                                        <span className={cn(
+                                            "text-4xl font-serif font-bold tracking-tighter transition-all duration-300 group-hover:text-[#d4a853] group-hover:pl-4",
+                                            pathname === item.path ? "text-[#d4a853]" : "text-[#1e1e1e]"
+                                        )}>
+                                            {item.name}
+                                        </span>
+                                    </Link>
+                                    <div className="h-[1px] w-full bg-gray-200 mt-4 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                                </motion.div>
+                            ))}
+                            
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                                className="pt-8 border-t border-gray-200"
+                            >
+                                <Link
+                                    href="/contact"
+                                    onClick={() => setIsOpen(false)}
+                                    className="block w-full text-center bg-[#1e1e1e] text-white py-4 font-mono text-sm tracking-widest hover:bg-[#d4a853] transition-colors"
+                                >
+                                    [ CONTACT / 相談 ]
+                                </Link>
+                            </motion.div>
+                        </div>
+
+                        {/* Background Deco */}
+                        <div className="absolute bottom-[-10%] right-[-10%] text-[30vh] font-cinzel font-bold text-black/5 pointer-events-none select-none leading-none">
+                            O2
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
