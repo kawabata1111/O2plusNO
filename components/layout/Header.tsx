@@ -62,13 +62,13 @@ export default function Header() {
                     <div className="flex flex-col leading-none">
                         <span className={cn(
                             "text-xl md:text-2xl font-cinzel font-bold tracking-[0.1em] transition-colors duration-300",
-                            isOpen ? "text-white" : "text-slate-900" // White when menu open
+                            "text-slate-900" // Always dark text
                         )}>
                             O2plusNO
                         </span>
                         <span className={cn(
                             "text-[9px] tracking-[0.3em] font-sans uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 -mt-1",
-                            isOpen ? "text-slate-400" : "text-slate-500"
+                            "text-slate-500"
                         )}>
                             Beyond Limits
                         </span>
@@ -119,7 +119,7 @@ export default function Header() {
                     onClick={() => setIsOpen(!isOpen)}
                     className={cn(
                         "md:hidden relative z-50 p-2 transition-colors",
-                        isOpen ? "text-white" : "text-slate-900 hover:text-cyan-600" // White when menu open
+                        "text-slate-900 hover:text-cyan-600" // Always dark text
                     )}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -134,9 +134,15 @@ export default function Header() {
                         animate={{ opacity: 1, clipPath: "circle(150% at 100% 0)" }}
                         exit={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
-                        className="fixed inset-0 bg-slate-900 z-[9999] flex flex-col justify-center px-8 md:hidden"
+                        className="fixed inset-0 bg-white z-[9999] flex flex-col justify-center px-8 md:hidden"
                     >
-                        {/* Redundant close button removed - header button controls this */}
+                        {/* Close Button */}
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            className="absolute top-6 right-6 p-2 text-slate-900 hover:text-cyan-600 transition-colors z-50"
+                        >
+                            <X size={32} />
+                        </button>
 
                         <div className="flex flex-col space-y-8">
                             {navItems.map((item, index) => (
@@ -149,11 +155,11 @@ export default function Header() {
                                     <Link
                                         href={item.path}
                                         onClick={() => setIsOpen(false)}
-                                        className="group flex items-baseline justify-between border-b border-slate-800 pb-4"
+                                        className="group flex items-baseline justify-between border-b border-slate-100 pb-4"
                                     >
                                         <span className={cn(
                                             "text-3xl font-cinzel font-bold tracking-wider transition-colors",
-                                            pathname === item.path ? "text-cyan-500" : "text-white group-hover:text-cyan-500"
+                                            pathname === item.path ? "text-cyan-600" : "text-slate-900 group-hover:text-cyan-600"
                                         )}>
                                             {item.name}
                                         </span>
@@ -170,7 +176,7 @@ export default function Header() {
                                 <Link
                                     href="/contact#form-start"
                                     onClick={() => setIsOpen(false)}
-                                    className="block w-full text-center py-4 border border-cyan-600 text-cyan-500 font-cinzel tracking-[0.2em] text-sm hover:bg-cyan-600 hover:text-white transition-all rounded-sm"
+                                    className="block w-full text-center py-4 border border-cyan-600 text-cyan-600 font-cinzel tracking-[0.2em] text-sm hover:bg-cyan-600 hover:text-white transition-all rounded-sm"
                                 >
                                     CONTACT
                                 </Link>

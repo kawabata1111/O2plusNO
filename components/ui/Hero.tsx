@@ -49,7 +49,7 @@ export default function Hero() {
                 </div>
 
                 {/* Center: Main Message */}
-                <div className="lg:col-span-8 text-center lg:text-left flex flex-col items-center lg:items-start justify-center h-full pt-20 lg:pt-0">
+                <div className="lg:col-span-8 text-center lg:text-left flex flex-col items-center lg:items-start justify-center h-full pt-0 lg:pt-0">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
