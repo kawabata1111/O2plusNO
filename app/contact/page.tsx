@@ -51,7 +51,7 @@ export default function ContactPage() {
                                         <Phone size={18} />
                                         <span className="text-[10px] font-cinzel tracking-widest font-bold">VOICE_CHANNEL / お電話</span>
                                     </div>
-                                    <p className="text-2xl font-bold tracking-wider font-mono text-slate-900">050-5527-6238</p>
+                                    <p className="text-lg md:text-2xl font-bold tracking-wider font-mono text-slate-900">050-5527-6238</p>
                                     <p className="text-[10px] text-slate-400 mt-2 font-cinzel">AVAILABILITY: MON-FRI 10:00-18:00</p>
                                 </div>
 
@@ -60,7 +60,7 @@ export default function ContactPage() {
                                         <Mail size={18} />
                                         <span className="text-[10px] font-cinzel tracking-widest font-bold">DATA_PACKET / メール</span>
                                     </div>
-                                    <p className="text-xl font-bold tracking-wider font-mono text-slate-900">o2plusno20171011@gmail.com</p>
+                                    <p className="text-sm sm:text-base md:text-xl font-bold tracking-wider font-mono text-slate-900 break-all">o2plusno20171011@gmail.com</p>
                                     <p className="text-[10px] text-slate-400 mt-2 font-cinzel">AVAILABILITY: 24/7 AUTO_RECEIVE</p>
                                 </div>
                             </div>

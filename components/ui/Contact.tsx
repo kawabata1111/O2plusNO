@@ -63,7 +63,7 @@ export default function Contact() {
                                     <Phone size={16} />
                                     <span className="text-[10px] font-cinzel tracking-widest font-bold">VOICE_COMM / お電話</span>
                                 </div>
-                                <p className="text-xl font-bold tracking-wider font-mono text-slate-800">050-5527-6238</p>
+                                <p className="text-lg md:text-xl font-bold tracking-wider font-mono text-slate-800">050-5527-6238</p>
                             </div>
                             
                             <div className="group cursor-pointer">
@@ -71,7 +71,7 @@ export default function Contact() {
                                     <Mail size={16} />
                                     <span className="text-[10px] font-cinzel tracking-widest font-bold">DATA_PACKET / メール</span>
                                 </div>
-                                <p className="text-lg font-bold tracking-wider font-mono text-slate-800">o2plusno20171011@gmail.com</p>
+                                <p className="text-sm sm:text-base md:text-lg font-bold tracking-wider font-mono text-slate-800 break-all">o2plusno20171011@gmail.com</p>
                             </div>
                         </div>
 
