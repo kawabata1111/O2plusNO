@@ -157,9 +157,6 @@ export default function Header() {
                                         )}>
                                             {item.name}
                                         </span>
-                                        <span className="text-xs text-slate-500 font-sans tracking-widest group-hover:text-cyan-500 transition-colors">
-                                            {item.label}
-                                        </span>
                                     </Link>
                                 </motion.div>
                             ))}
