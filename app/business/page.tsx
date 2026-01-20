@@ -55,7 +55,6 @@ const businesses = [
                     これまでに<strong className="border-b-2 border-[#d4a853] pb-1">累計2,500名以上</strong>の方をサポートしてきました。
                 </p>
                 <div className="bg-gray-50 p-8 border-l-4 border-[#1e1e1e] mb-8 relative">
-                    <div className="absolute top-2 right-2 text-[10px] font-mono text-gray-300">NOTICE_FILE</div>
                     <p className="font-bold text-[#1e1e1e] mb-2 font-mono text-xs tracking-widest">// FREE_CONSULTATION</p>
                     <p className="text-gray-600 mb-6 text-sm">
                         初期費用などは一切かかりません。まずはお気軽にご相談ください。
@@ -97,10 +96,6 @@ const businesses = [
                         </p>
                     </div>
                 </div>
-                <div className="flex items-center gap-2 font-mono text-[10px] text-gray-400">
-                    <span className="w-1.5 h-1.5 bg-[#d4a853] rounded-full animate-ping" />
-                    <span>CONSULTATION_AVAILABLE: FREE_OF_CHARGE</span>
-                </div>
             </>
         )
     }
@@ -116,13 +111,6 @@ export default function BusinessPage() {
             />
             
             <section className="bg-white text-[#1e1e1e] relative overflow-hidden">
-                {/* Tech Grid Background */}
-                <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                    style={{ 
-                        backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                        backgroundSize: '40px 40px' 
-                    }} 
-                />
 
                 <div className="max-w-7xl mx-auto px-6 py-20 md:py-40 relative z-10">
                     <div className="space-y-32">

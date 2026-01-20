@@ -37,13 +37,6 @@ export default function Message() {
     return (
         <section className="relative section-padding overflow-hidden bg-[#fafaf9] text-[#1e1e1e]">
             
-            {/* Tech Grid Background */}
-            <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                style={{ 
-                    backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                    backgroundSize: '40px 40px' 
-                }} 
-            />
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -61,9 +54,6 @@ export default function Message() {
                         
                         <GlitchImage />
                         
-                        <div className="absolute bottom-4 left-4 bg-black text-white px-2 py-1 font-mono text-[9px] md:text-xs tracking-widest">
-                            IMG_SRC: FOUNDER.jpg
-                        </div>
                     </motion.div>
 
                     {/* Text Content */}
@@ -104,12 +94,9 @@ export default function Message() {
                         <div className="mt-12 md:mt-16 pt-8 border-t border-gray-200 flex items-center justify-between">
                             <div>
                                 <p className="font-mono text-[10px] text-gray-400 mb-1 uppercase tracking-widest">AUTH_SIGNATURE / 代表</p>
-                                <p className="text-xl md:text-2xl font-bold tracking-widest uppercase">Kengo Ohno</p>
+                                <p className="text-xl md:text-2xl font-bold tracking-widest">Kengo Oono</p>
                             </div>
                             
-                            <div className="font-mono text-[10px] text-[#d4a853] bg-gray-50 px-3 py-1 border border-gray-100">
-                                ID: 001 // CEO
-                            </div>
                         </div>
                     </motion.div>
                 </div>

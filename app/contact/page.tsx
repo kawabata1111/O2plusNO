@@ -15,13 +15,6 @@ export default function ContactPage() {
             />
             
             <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
-                {/* Tech Grid Background */}
-                <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                    style={{ 
-                        backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                        backgroundSize: '40px 40px' 
-                    }} 
-                />
 
                 <div className="max-w-6xl mx-auto px-6 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-20">
@@ -81,10 +74,6 @@ export default function ContactPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="bg-white border border-gray-200 p-10 md:p-12 relative overflow-hidden shadow-xl"
                         >
-                            {/* Decorative Elements */}
-                            <div className="absolute top-0 right-0 p-4 font-mono text-[10px] text-gray-400 text-right">
-                                SECURE_FORM<br/>VER: 2.0.4
-                            </div>
                             
                             {/* Corner Markers */}
                             <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#1e1e1e]" />

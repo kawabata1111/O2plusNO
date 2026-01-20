@@ -14,13 +14,6 @@ export default function CompanyPage() {
             />
             
             <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
-                {/* Tech Grid Background */}
-                <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                    style={{ 
-                        backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                        backgroundSize: '40px 40px' 
-                    }} 
-                />
 
                 <div className="max-w-4xl mx-auto px-6 relative z-10">
                     <motion.div
@@ -36,12 +29,6 @@ export default function CompanyPage() {
                         <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#d4a853]" />
                         <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#d4a853]" />
 
-                        <div className="flex items-center gap-2 mb-12">
-                            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                            <h2 className="text-xs font-mono tracking-widest text-gray-500 uppercase">
-                                DATA_FILE: CORPORATE_INFO
-                            </h2>
-                        </div>
 
                         <dl className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-y-8">
                             {[
@@ -78,7 +65,6 @@ export default function CompanyPage() {
                     >
                         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                             <h2 className="text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap">ACCESS / <span className="text-[#d4a853]">アクセス</span></h2>
-                            <div className="font-mono text-xs text-gray-400">COORDINATES: 35.788, 139.578</div>
                         </div>
                         
                         {/* Map Container with Tech Overlay */}

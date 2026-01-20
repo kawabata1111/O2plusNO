@@ -47,13 +47,6 @@ interface PageHeaderProps {
 export default function PageHeader({ title, subtitle, enTitle }: PageHeaderProps) {
     return (
         <section className="relative h-[40vh] md:h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden bg-[#fafaf9] text-[#1e1e1e]">
-            {/* Tech Grid Background */}
-            <div className="absolute inset-0 pointer-events-none opacity-[0.05]" 
-                style={{ 
-                    backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                    backgroundSize: '40px 40px' 
-                }} 
-            />
 
             {/* Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
@@ -96,9 +89,6 @@ export default function PageHeader({ title, subtitle, enTitle }: PageHeaderProps
                         <Link href="/" className="hover:text-[#d4a853] transition-colors">HOME</Link>
                         <span>/</span>
                         <span className="text-[#1e1e1e] truncate max-w-[150px]">{enTitle}</span>
-                    </div>
-                    <div className="hidden sm:block uppercase">
-                        SESSION_ID: {Math.random().toString(36).substr(2, 6).toUpperCase()}
                     </div>
                 </motion.div>
             </div>

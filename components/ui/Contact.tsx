@@ -9,13 +9,6 @@ export default function Contact() {
     return (
         <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
             
-            {/* Tech Grid Background */}
-            <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                style={{ 
-                    backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                    backgroundSize: '40px 40px' 
-                }} 
-            />
 
             <div className="max-w-4xl mx-auto px-6 relative z-10">
                 <motion.div
@@ -31,12 +24,6 @@ export default function Contact() {
 
                     <div className="bg-gray-50 p-12 md:p-20 text-center relative overflow-hidden">
                         
-                        {/* Background Data */}
-                        <div className="absolute top-4 right-4 text-[10px] font-mono text-gray-300 text-right leading-tight">
-                            SECURE_CHANNEL: ACTIVE<br/>
-                            ENCRYPTION: AES-256<br/>
-                            SESSION_ID: {Math.random().toString(36).substr(2, 9).toUpperCase()}
-                        </div>
 
                         <h2 className="text-[#d4a853] font-bold tracking-[0.4em] uppercase mb-6 text-xs font-mono">
                             // 04_CONTACT_NODE

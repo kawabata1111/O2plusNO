@@ -58,7 +58,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="relative z-50 group" onClick={() => isOpen && setIsOpen(false)}>
                     <span className={cn(
-                        "text-xl md:text-2xl font-cinzel font-bold tracking-widest transition-colors",
+                        "text-xl md:text-2xl font-bold tracking-widest transition-colors",
                         isOpen || scrolled || pathname !== '/' ? "text-[#1e1e1e]" : "text-white"
                     )}>
                         O2plusNO INC.
@@ -114,13 +114,6 @@ export default function Header() {
                         transition={{ duration: 0.4 }}
                         className="fixed inset-0 bg-[#fafaf9] z-[10001] flex flex-col justify-center px-8 md:hidden"
                     >
-                        {/* Tech Grid Background */}
-                        <div className="absolute inset-0 pointer-events-none opacity-[0.05]" 
-                            style={{ 
-                                backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                                backgroundSize: '40px 40px' 
-                            }} 
-                        />
                         
                         {/* Close Button (Absolute position for easy access) */}
                         <button

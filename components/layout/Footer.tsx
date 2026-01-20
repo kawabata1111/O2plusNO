@@ -8,7 +8,7 @@ export default function Footer() {
                     
                     {/* Company Info Header */}
                     <div>
-                        <h2 className="text-2xl font-cinzel font-bold mb-6 tracking-widest text-[#d4a853]">
+                        <h2 className="text-2xl font-bold mb-6 tracking-widest text-[#d4a853]">
                             <DecodeText text="O2plusNO INC." />
                         </h2>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6 font-light">
@@ -54,8 +54,8 @@ export default function Footer() {
                             Privacy Policy
                         </a>
                     </div>
-                    <p className="text-[10px] text-gray-600 tracking-widest uppercase">
-                        &copy; {new Date().getFullYear()} O2plusNO. All Rights Reserved.
+                    <p className="text-[10px] text-gray-600 tracking-widest">
+                        &copy; {new Date().getFullYear()} O2plusNO. ALL RIGHTS RESERVED.
                     </p>
                 </div>
             </div>

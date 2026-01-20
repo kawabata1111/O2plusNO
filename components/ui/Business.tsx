@@ -53,13 +53,6 @@ export default function Business() {
     return (
         <section className="section-padding bg-white text-[#1e1e1e] relative overflow-hidden">
             
-            {/* Tech Grid Background */}
-            <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                style={{ 
-                    backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                    backgroundSize: '40px 40px' 
-                }} 
-            />
 
             <div className="max-w-7xl mx-auto relative z-10">
                 
@@ -84,10 +77,6 @@ export default function Business() {
                         <p className="text-xs md:text-sm font-bold text-gray-500 tracking-wider mt-4">
                             多角的な視点で、価値を創造する。
                         </p>
-                    </div>
-                    <div className="font-mono text-[10px] text-gray-400">
-                        <p>STATUS: ACTIVE</p>
-                        <p>NODES: 03</p>
                     </div>
                 </motion.div>
 

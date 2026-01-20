@@ -23,13 +23,6 @@ export default function Achievements() {
     return (
         <section className="relative section-padding overflow-hidden bg-white text-[#1e1e1e]">
             
-            {/* Tech Grid Background */}
-            <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
-                style={{ 
-                    backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', 
-                    backgroundSize: '40px 40px' 
-                }} 
-            />
 
             {/* Rotating HUD Circle - Responsive sizing */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-20 lg:opacity-50">
@@ -47,12 +40,6 @@ export default function Achievements() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-flex items-center gap-2 mb-12 md:mb-16 border border-gray-200 px-4 py-1 rounded-full bg-white shadow-sm">
-                        <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                        <p className="font-mono text-[10px] tracking-widest text-gray-500 uppercase">
-                            SYSTEM_STATUS: OPTIMAL
-                        </p>
-                    </div>
                     
                     <h2 className="text-[10px] font-mono tracking-[0.3em] mb-8 md:mb-12 text-gray-400 uppercase">
                         // <DecodeText text="TOTAL_ACHIEVEMENTS_DATA" /> / <span className="text-[#1e1e1e] font-bold">実績データ</span>
@@ -86,9 +73,6 @@ export default function Achievements() {
                         ))}
                     </div>
 
-                    <p className="font-mono text-[9px] text-gray-400 mt-12 tracking-wider">
-                        EXECUTING_ANALYSIS... SUCCESS_RATE: 98.9%
-                    </p>
                 </motion.div>
             </div>
         </section>
