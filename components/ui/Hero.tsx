@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Hero() {
     return (
-        <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-50 via-blue-50 to-white">
+        <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-transparent">
             {/* Removed Background Image and Blobs for clear view of Particles */}
 
             {/* 2. Giant Typography Background */}
