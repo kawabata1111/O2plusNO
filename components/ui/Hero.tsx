@@ -14,7 +14,7 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 1.1 }}
                     animate={{ opacity: 0.03, scale: 1 }}
                     transition={{ duration: 2, ease: "easeOut" }}
-                    className="text-[18vw] md:text-[13vw] font-cinzel font-bold text-slate-900 leading-none tracking-tighter whitespace-nowrap"
+                    className="text-[18vw] md:text-[13vw] font-serif font-bold text-slate-900 leading-none tracking-tighter whitespace-nowrap"
                 >
                     O2plusNO
                 </motion.div>

@@ -61,8 +61,8 @@ export default function Header() {
                 <Link href="/" className="relative z-50 group" onClick={() => isOpen && setIsOpen(false)}>
                     <div className="flex flex-col leading-none">
                         <span className={cn(
-                            "text-xl md:text-2xl font-cinzel font-bold tracking-[0.1em] transition-colors duration-300",
-                            "text-slate-900" // Always dark text
+                            "text-xl md:text-2xl font-serif font-bold tracking-[0.1em] transition-colors duration-300",
+                            isOpen ? "text-white" : "text-slate-900" // White when menu open
                         )}>
                             O2plusNO
                         </span>

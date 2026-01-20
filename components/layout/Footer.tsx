@@ -8,7 +8,7 @@ export default function Footer() {
                     
                     {/* Company Info Header */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6 tracking-widest text-cyan-500 font-cinzel">
+                        <h2 className="text-2xl font-bold mb-6 tracking-widest text-cyan-500 font-serif">
                             <DecodeText text="O2plusNO INC." />
                         </h2>
                         <p className="text-slate-400 text-sm leading-relaxed mb-6 font-sans font-medium">
