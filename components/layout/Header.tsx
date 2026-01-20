@@ -8,10 +8,10 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-    { name: 'TOP', path: '/' },
-    { name: 'PHILOSOPHY', path: '/#philosophy' },
-    { name: 'BUSINESS', path: '/business' },
-    { name: 'COMPANY', path: '/company' },
+    { name: 'TOP', label: 'トップ', path: '/' },
+    { name: 'PHILOSOPHY', label: '理念', path: '/#philosophy' },
+    { name: 'BUSINESS', label: '事業', path: '/business' },
+    { name: 'COMPANY', label: '会社', path: '/company' },
 ];
 
 export default function Header() {
@@ -27,12 +27,12 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // ページ遷移時にメニューを閉じる
+    // Close menu on route change
     useEffect(() => {
         setIsOpen(false);
     }, [pathname]);
 
-    // メニュー展開時にスクロールをロック
+    // Lock body scroll when menu is open
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -47,55 +47,72 @@ export default function Header() {
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 right-0 z-[10000] transition-all duration-300 border-b",
+                "fixed top-0 left-0 right-0 z-[10000] transition-all duration-500 ease-in-out",
                 scrolled || isOpen || pathname !== '/'
-                    ? "bg-white/90 backdrop-blur-md py-4 border-slate-200" 
-                    : "bg-transparent py-6 border-transparent"
+                    ? "bg-white/80 backdrop-blur-md py-4 shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-b border-white/20" 
+                    : "bg-transparent py-8 border-b border-transparent"
             )}
         >
-            <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
                 
                 {/* Logo */}
                 <Link href="/" className="relative z-50 group" onClick={() => isOpen && setIsOpen(false)}>
-                    <span className={cn(
-                        "text-xl md:text-2xl font-bold tracking-widest transition-colors text-slate-900",
-                        // Always dark text for white background theme
-                    )}>
-                        O2plusNO INC.
-                    </span>
+                    <div className="flex flex-col leading-none">
+                        <span className={cn(
+                            "text-xl md:text-2xl font-cinzel font-bold tracking-[0.1em] transition-colors duration-300",
+                            "text-slate-900"
+                        )}>
+                            O2plusNO
+                        </span>
+                        <span className="text-[9px] tracking-[0.3em] text-slate-500 font-sans uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 -mt-1">
+                            Beyond Limits
+                        </span>
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden md:flex items-center gap-10">
                     {navItems.map((item) => (
                         <Link
                             key={item.path}
                             href={item.path}
-                            className={cn(
-                                "text-sm font-medium tracking-widest transition-colors font-mono",
-                                pathname === item.path ? "text-cyan-600" : "text-slate-600 hover:text-cyan-600"
-                            )}
+                            className="relative group py-2"
                         >
-                            {item.name}
+                            <span className={cn(
+                                "text-xs font-cinzel font-semibold tracking-widest transition-colors duration-300",
+                                pathname === item.path ? "text-cyan-600" : "text-slate-600 group-hover:text-cyan-600"
+                            )}>
+                                {item.name}
+                            </span>
+                            {/* Hover Underline */}
+                            <span className={cn(
+                                "absolute bottom-0 left-0 w-full h-[1px] bg-cyan-400 transform scale-x-0 transition-transform duration-300 origin-right group-hover:origin-left group-hover:scale-x-100",
+                                pathname === item.path && "scale-x-100 bg-cyan-600"
+                            )} />
                         </Link>
                     ))}
+                    
+                    {/* Contact Button */}
                     <Link
                         href="/contact#form-start"
-                        className={cn(
-                            "px-6 py-2 text-xs font-bold tracking-widest rounded-sm transition-colors border font-mono",
-                            "bg-slate-900 text-white border-slate-900 hover:bg-cyan-600 hover:border-cyan-600"
-                        )}
+                        className="group relative px-6 py-2 overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.3)]"
                     >
-                        CONTACT / 相談
+                        <div className="absolute inset-0 border border-slate-200 rounded-full group-hover:border-cyan-400 transition-colors duration-300" />
+                        <div className="absolute inset-0 bg-slate-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        
+                        <div className="relative flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse" />
+                            <span className="text-[10px] font-bold tracking-widest text-slate-800 font-cinzel group-hover:text-cyan-700 transition-colors">
+                                CONTACT
+                            </span>
+                        </div>
                     </Link>
                 </nav>
 
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className={cn(
-                        "md:hidden relative z-50 p-2 transition-colors text-slate-900"
-                    )}
+                    className="md:hidden relative z-50 p-2 text-slate-900 hover:text-cyan-600 transition-colors"
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
@@ -105,68 +122,52 @@ export default function Header() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.4 }}
-                        className="fixed inset-0 bg-white z-[10001] flex flex-col justify-center px-8 md:hidden"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                        className="fixed inset-0 bg-white/95 backdrop-blur-xl z-[9999] flex flex-col pt-32 px-8 md:hidden shadow-2xl"
                     >
-                        
-                        {/* Close Button (Absolute position for easy access) */}
-                        <button
-                            onClick={() => setIsOpen(false)}
-                            className="absolute top-6 right-6 p-2 text-slate-900 hover:text-cyan-600 transition-colors z-50"
-                        >
-                            <X size={32} />
-                        </button>
-
-                        <div className="space-y-8 relative z-10">
+                        <div className="flex flex-col space-y-6">
                             {navItems.map((item, index) => (
                                 <motion.div
                                     key={item.path}
-                                    initial={{ opacity: 0, x: -50 }}
+                                    initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: -20 }}
-                                    transition={{ delay: 0.1 + index * 0.1, duration: 0.5 }}
+                                    transition={{ delay: 0.1 + index * 0.1 }}
                                 >
                                     <Link
                                         href={item.path}
                                         onClick={() => setIsOpen(false)}
-                                        className="group flex items-end gap-4"
+                                        className="group flex items-center justify-between py-4 border-b border-slate-100"
                                     >
-                                        <span className="text-xs font-mono text-cyan-600 mb-2 tracking-widest">
-                                            0{index + 1}
-                                        </span>
                                         <span className={cn(
-                                            "text-4xl font-serif font-bold tracking-tighter transition-all duration-300 group-hover:text-cyan-600 group-hover:pl-4",
-                                            pathname === item.path ? "text-cyan-600" : "text-slate-900"
+                                            "text-2xl font-cinzel font-bold tracking-wider",
+                                            pathname === item.path ? "text-cyan-600" : "text-slate-800"
                                         )}>
                                             {item.name}
                                         </span>
+                                        <span className="text-xs text-slate-400 font-sans tracking-widest group-hover:text-cyan-500 transition-colors">
+                                            {item.label}
+                                        </span>
                                     </Link>
-                                    <div className="h-[1px] w-full bg-slate-100 mt-4 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
                                 </motion.div>
                             ))}
                             
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.5, duration: 0.5 }}
-                                className="pt-8 border-t border-slate-100"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.4 }}
+                                className="pt-8"
                             >
-                        
-                        <Link
-                            href="/contact#form-start"
-                            className="text-xl font-mono font-bold tracking-widest text-white bg-slate-900 px-8 py-3 mt-4 hover:bg-cyan-600 transition-colors block text-center"
-                        >
-                            CONTACT / 相談
-                        </Link>
+                                <Link
+                                    href="/contact#form-start"
+                                    onClick={() => setIsOpen(false)}
+                                    className="block w-full text-center py-4 bg-slate-900 text-white font-cinzel tracking-widest text-sm hover:bg-cyan-700 transition-colors rounded-sm shadow-lg"
+                                >
+                                    CONTACT
+                                </Link>
                             </motion.div>
-                        </div>
-
-                        {/* Background Deco */}
-                        <div className="absolute bottom-[-10%] right-[-10%] text-[30vh] font-cinzel font-bold text-slate-50 pointer-events-none select-none leading-none">
-                            O2
                         </div>
                     </motion.div>
                 )}

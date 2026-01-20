@@ -92,7 +92,7 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        className="text-slate-600 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
+                        className="text-slate-900 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-medium tracking-wide drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]"
                     >
                         自立した個人が互いに支え合い、<br className="hidden md:block"/>
                         その力を社会への貢献へと繋げていく。<br className="hidden md:block"/>
@@ -106,10 +106,10 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1.5, duration: 1 }}
-                        className="flex flex-col items-center gap-4"
+                        className="flex flex-col items-center gap-4 backdrop-blur-[2px] py-4 rounded-full"
                     >
-                        <span className="text-[10px] text-slate-400 tracking-[0.3em] uppercase writing-vertical-rl font-cinzel">Scroll</span>
-                        <div className="w-[1px] h-24 bg-gradient-to-b from-slate-200/0 via-slate-400 to-slate-200/0" />
+                        <span className="text-[10px] text-slate-700 font-bold tracking-[0.3em] uppercase writing-vertical-rl font-cinzel drop-shadow-sm">Scroll</span>
+                        <div className="w-[1.5px] h-24 bg-gradient-to-b from-slate-400/0 via-slate-600 to-slate-400/0" />
                     </motion.div>
                 </div>
             </div>
@@ -119,9 +119,10 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 1 }}
-                className="lg:hidden absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+                className="lg:hidden absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 backdrop-blur-[2px] p-2 rounded-full"
             >
-                <div className="w-[1px] h-12 bg-gradient-to-b from-slate-400 to-transparent" />
+                 <span className="text-[10px] text-slate-700 font-bold tracking-[0.2em] uppercase font-cinzel drop-shadow-sm mb-1">Scroll</span>
+                <div className="w-[1.5px] h-12 bg-gradient-to-b from-slate-600 to-transparent" />
             </motion.div>
         </section>
     );

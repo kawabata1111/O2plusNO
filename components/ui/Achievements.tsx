@@ -21,15 +21,15 @@ function Counter({ from, to }: { from: number; to: number }) {
 
 export default function Achievements() {
     return (
-        <section className="relative section-padding overflow-hidden bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f]">
+        <section className="relative section-padding overflow-hidden bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-slate-800">
             
 
             {/* Rotating HUD Circle - Responsive sizing */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-20 lg:opacity-50">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-20 lg:opacity-30">
                 <motion.div 
                     animate={{ rotate: 360 }}
-                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    className="w-[300px] h-[300px] md:w-[600px] md:h-[600px] border border-dashed border-gray-300 rounded-full"
+                    transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                    className="w-[300px] h-[300px] md:w-[600px] md:h-[600px] border border-dashed border-slate-300 rounded-full"
                 />
             </div>
 
@@ -41,23 +41,23 @@ export default function Achievements() {
                     transition={{ duration: 0.8 }}
                 >
                     
-                    <h2 className="text-[10px] font-mono tracking-[0.3em] mb-8 md:mb-12 text-gray-400 uppercase">
-                        // <DecodeText text="TOTAL_ACHIEVEMENTS_DATA" /> / <span className="text-[#1e3a5f] font-bold">実績データ</span>
+                    <h2 className="text-[10px] font-cinzel tracking-[0.3em] mb-8 md:mb-12 text-slate-400 uppercase font-bold">
+                        // <DecodeText text="TOTAL_ACHIEVEMENTS_DATA" /> / <span className="text-slate-700 font-sans">実績データ</span>
                     </h2>
                     
-                    <div className="relative inline-block py-8 px-10 md:py-10 md:px-20 border-y border-gray-100 bg-white/80 backdrop-blur-sm">
+                    <div className="relative inline-block py-8 px-10 md:py-10 md:px-20 border-y border-slate-100 bg-white/60 backdrop-blur-sm shadow-sm rounded-sm">
                         {/* Corner Markers */}
-                        <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#2563eb]" />
-                        <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-[#2563eb]" />
-                        <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-[#2563eb]" />
-                        <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#2563eb]" />
+                        <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-cyan-500" />
+                        <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-cyan-500" />
+                        <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-cyan-500" />
+                        <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-cyan-500" />
 
-                        <div className="text-6xl md:text-8xl lg:text-9xl font-mono font-bold text-[#1e3a5f] tracking-tighter flex items-center justify-center">
+                        <div className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold text-slate-900 tracking-tighter flex items-center justify-center">
                             <Counter from={0} to={2500} />
-                            <span className="text-3xl md:text-5xl lg:text-6xl text-[#2563eb] ml-2">+</span>
+                            <span className="text-3xl md:text-5xl lg:text-6xl text-cyan-500 ml-2 font-cinzel">+</span>
                         </div>
-                        <p className="text-[10px] font-mono text-gray-400 mt-2 uppercase tracking-widest">
-                            <DecodeText text="USERS_SUPPORTED" /> / <span className="text-[#1e3a5f] font-bold">累計サポート人数</span>
+                        <p className="text-[10px] font-cinzel text-slate-500 mt-4 uppercase tracking-widest font-bold">
+                            <DecodeText text="USERS_SUPPORTED" /> / <span className="text-slate-800 font-sans">累計サポート人数</span>
                         </p>
                     </div>
 
@@ -68,7 +68,7 @@ export default function Achievements() {
                                 initial={{ height: 4 }}
                                 animate={{ height: [4, 16, 4] }}
                                 transition={{ duration: 1, repeat: Infinity, delay: i * 0.05 }}
-                                className="w-1 bg-[#2563eb] opacity-50"
+                                className="w-1 bg-cyan-400 opacity-50"
                             />
                         ))}
                     </div>

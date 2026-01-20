@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Globe, Home, Users, ArrowRight, AlertTriangle } from 'lucide-react';
+import { ArrowRight, AlertTriangle } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import DecodeText from './DecodeText';
@@ -51,7 +51,7 @@ const businesses = [
 
 export default function Business() {
     return (
-        <section className="section-padding bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
+        <section className="section-padding bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-slate-800 relative overflow-hidden">
             
 
             <div className="max-w-7xl mx-auto relative z-10">
@@ -62,19 +62,19 @@ export default function Business() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 md:mb-32 border-b border-gray-200 pb-8 gap-6"
+                    className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 md:mb-32 border-b border-slate-200 pb-8 gap-6"
                 >
                     <div>
-                        <h2 className="text-[#2563eb] text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-mono">
+                        <h2 className="text-cyan-600 text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-cinzel">
                             // <DecodeText text="OUR BUSINESS" />
                         </h2>
-                        <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                            <DecodeText text="CREATE VALUE" className="block" />
-                            <span className="text-gray-300">
-                                <DecodeText text="MULTIFACETED" />
+                        <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight font-serif text-slate-900">
+                            <DecodeText text="CREATE VALUE" className="block font-cinzel" />
+                            <span className="text-slate-300">
+                                <DecodeText text="MULTIFACETED" className="font-cinzel" />
                             </span>
                         </p>
-                        <p className="text-xs md:text-sm font-bold text-gray-500 tracking-wider mt-4">
+                        <p className="text-xs md:text-sm font-bold text-slate-500 tracking-wider mt-4 font-sans">
                             多角的な視点で、価値を創造する。
                         </p>
                     </div>
@@ -89,36 +89,36 @@ export default function Business() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                                className="bg-gray-50 border border-gray-200 h-full p-1 relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+                                className="bg-white border border-slate-200 h-full p-1 relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200"
                                 style={{
-                                    clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)'
+                                    clipPath: 'polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%)'
                                 }}
                             >
                                 {/* Image */}
-                                <div className="relative h-48 md:h-56 w-full overflow-hidden mb-6 bg-gray-200">
+                                <div className="relative h-48 md:h-56 w-full overflow-hidden mb-6 bg-slate-100">
                                      <Image 
                                         src={item.image} 
                                         alt={item.title} 
                                         fill 
                                         className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
                                     />
-                                    <div className="absolute top-2 right-2 bg-black text-white text-[10px] px-2 py-1 font-mono">
+                                    <div className="absolute top-2 right-2 bg-slate-900 text-white text-[10px] px-2 py-1 font-cinzel">
                                         {item.id}
                                     </div>
                                 </div>
 
                                 <div className="px-6 pb-16 md:pb-20">
-                                    <p className="text-[10px] font-mono text-[#2563eb] mb-2 tracking-widest uppercase">
+                                    <p className="text-[10px] font-cinzel text-cyan-600 mb-2 tracking-widest uppercase font-bold">
                                         {item.subtitle}
                                     </p>
-                                    <h3 className="text-xl font-bold mb-1 group-hover:text-[#2563eb] transition-colors">
+                                    <h3 className="text-xl font-bold mb-1 group-hover:text-cyan-700 transition-colors font-cinzel text-slate-900">
                                         {item.title}
                                     </h3>
-                                    <p className="text-xs font-bold text-gray-500 mb-6 border-b border-gray-200 pb-4 inline-block">
+                                    <p className="text-xs font-bold text-slate-500 mb-6 border-b border-slate-100 pb-4 inline-block font-sans">
                                         {item.jpTitle}
                                     </p>
                                     
-                                    <div className="space-y-4 mb-8 text-xs md:text-sm text-gray-600 font-sans leading-relaxed">
+                                    <div className="space-y-4 mb-8 text-xs md:text-sm text-slate-600 font-sans leading-relaxed">
                                         {item.desc.map((line, i) => (
                                             <p key={i}>{line}</p>
                                         ))}
@@ -133,10 +133,10 @@ export default function Business() {
 
                                     <Link 
                                         href={item.link} 
-                                        className="absolute bottom-0 right-0 bg-[#1e3a5f] text-white px-6 py-3 font-mono text-[10px] md:text-xs hover:bg-[#2563eb] transition-colors flex items-center gap-2"
+                                        className="absolute bottom-0 right-0 bg-slate-900 text-white px-6 py-3 font-cinzel text-[10px] md:text-xs hover:bg-cyan-600 transition-colors flex items-center gap-2"
                                         style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0 100%)' }}
                                     >
-                                        詳細を見る / VIEW <ArrowRight size={12} />
+                                        VIEW DETAILS <ArrowRight size={12} />
                                     </Link>
                                 </div>
                             </motion.div>

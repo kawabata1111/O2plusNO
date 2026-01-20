@@ -77,7 +77,7 @@ export default function Particles() {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={0.06}
+        size={0.12}
         color="#0ea5e9" // Sky Blue / Cyan
         transparent
         opacity={0.8}
