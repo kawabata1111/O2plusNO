@@ -23,12 +23,6 @@ export default function ThanksPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 mb-12 border border-green-200 px-6 py-2 rounded-full bg-green-50">
-                            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                            <p className="font-mono text-xs tracking-widest text-green-700">
-                                TRANSMISSION_STATUS: COMPLETE
-                            </p>
-                        </div>
                         
                         <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8 leading-tight">
                             お問い合わせ<br/>ありがとうございました。
