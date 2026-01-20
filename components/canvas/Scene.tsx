@@ -6,7 +6,7 @@ import Particles from './Particles';
 
 export default function Scene() {
     return (
-        <div className="fixed inset-0 z-[-1] pointer-events-none opacity-100">
+        <div className="fixed inset-0 z-[-1] pointer-events-none opacity-100 bg-gradient-to-br from-cyan-50 via-blue-50 to-white">
             <Canvas 
                 camera={{ position: [0, 6, 12], fov: 45 }} 
                 gl={{ antialias: true, alpha: true }} 

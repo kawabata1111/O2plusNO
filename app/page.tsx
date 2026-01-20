@@ -12,7 +12,7 @@ import Contact from '@/components/ui/Contact';
 export default function Home() {
 
   return (
-    <main className="relative w-full bg-gradient-to-br from-cyan-50 via-blue-50 to-white">
+    <main className="relative w-full">
       {/* Background Ambience */}
       <Scene />
 
