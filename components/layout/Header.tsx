@@ -59,7 +59,7 @@ export default function Header() {
                 <Link href="/" className="relative z-50 group" onClick={() => isOpen && setIsOpen(false)}>
                     <span className={cn(
                         "text-xl md:text-2xl font-bold tracking-widest transition-colors",
-                        isOpen || scrolled || pathname !== '/' ? "text-[#1e1e1e]" : "text-white"
+                        isOpen || scrolled || pathname !== '/' ? "text-[#1e3a5f]" : "text-white"
                     )}>
                         O2plusNO INC.
                     </span>
@@ -72,8 +72,8 @@ export default function Header() {
                             key={item.path}
                             href={item.path}
                             className={cn(
-                                "text-sm font-medium tracking-widest transition-colors hover:text-[#d4a853] font-mono",
-                                pathname === item.path ? "text-[#d4a853]" : (scrolled || pathname !== '/' ? "text-[#1e1e1e]" : "text-white/80")
+                                "text-sm font-medium tracking-widest transition-colors hover:text-[#2563eb] font-mono",
+                                pathname === item.path ? "text-[#2563eb]" : (scrolled || pathname !== '/' ? "text-[#1e3a5f]" : "text-white/80")
                             )}
                         >
                             {item.name}
@@ -84,8 +84,8 @@ export default function Header() {
                         className={cn(
                             "px-6 py-2 text-xs font-bold tracking-widest rounded-sm transition-colors border font-mono",
                             scrolled || pathname !== '/' 
-                                ? "bg-[#1e1e1e] text-white border-[#1e1e1e] hover:bg-[#d4a853] hover:border-[#d4a853]" 
-                                : "bg-white text-[#1e1e1e] border-white hover:bg-[#d4a853] hover:text-white hover:border-[#d4a853]"
+                                ? "bg-[#1e3a5f] text-white border-[#1e3a5f] hover:bg-[#2563eb] hover:border-[#2563eb]" 
+                                : "bg-white text-[#1e3a5f] border-white hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb]"
                         )}
                     >
                         CONTACT / 相談
@@ -97,7 +97,7 @@ export default function Header() {
                     onClick={() => setIsOpen(!isOpen)}
                     className={cn(
                         "md:hidden relative z-50 p-2 transition-colors",
-                        isOpen ? "text-[#1e1e1e]" : (scrolled || pathname !== '/' ? "text-[#1e1e1e]" : "text-white")
+                        isOpen ? "text-[#1e3a5f]" : (scrolled || pathname !== '/' ? "text-[#1e3a5f]" : "text-white")
                     )}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -118,7 +118,7 @@ export default function Header() {
                         {/* Close Button (Absolute position for easy access) */}
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="absolute top-6 right-6 p-2 text-[#1e1e1e] hover:text-[#d4a853] transition-colors z-50"
+                            className="absolute top-6 right-6 p-2 text-[#1e3a5f] hover:text-[#2563eb] transition-colors z-50"
                         >
                             <X size={32} />
                         </button>
@@ -137,12 +137,12 @@ export default function Header() {
                                         onClick={() => setIsOpen(false)}
                                         className="group flex items-end gap-4"
                                     >
-                                        <span className="text-xs font-mono text-[#d4a853] mb-2 tracking-widest">
+                                        <span className="text-xs font-mono text-[#2563eb] mb-2 tracking-widest">
                                             0{index + 1}
                                         </span>
                                         <span className={cn(
-                                            "text-4xl font-serif font-bold tracking-tighter transition-all duration-300 group-hover:text-[#d4a853] group-hover:pl-4",
-                                            pathname === item.path ? "text-[#d4a853]" : "text-[#1e1e1e]"
+                                            "text-4xl font-serif font-bold tracking-tighter transition-all duration-300 group-hover:text-[#2563eb] group-hover:pl-4",
+                                            pathname === item.path ? "text-[#2563eb]" : "text-[#1e3a5f]"
                                         )}>
                                             {item.name}
                                         </span>
@@ -160,7 +160,7 @@ export default function Header() {
                         
                         <Link
                             href="/contact#form-start"
-                            className="text-xl font-mono font-bold tracking-widest text-white bg-[#1e1e1e] px-8 py-3 mt-4 hover:bg-[#d4a853] transition-colors"
+                            className="text-xl font-mono font-bold tracking-widest text-white bg-[#1e3a5f] px-8 py-3 mt-4 hover:bg-[#2563eb] transition-colors"
                         >
                             CONTACT / 相談
                         </Link>

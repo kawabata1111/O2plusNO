@@ -58,7 +58,7 @@ export default function RootLayout({
           cormorant.variable,
           cinzel.variable,
           inter.variable,
-          "antialiased bg-[#050505] text-white selection:bg-[#d4a853] selection:text-[#050505]"
+          "antialiased bg-[#050505] text-white selection:bg-[#2563eb] selection:text-[#050505]"
         )}
       >
         <SmoothScroll />

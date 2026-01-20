@@ -13,7 +13,7 @@ export default function PrivacyPage() {
                 subtitle="05_LEGAL" 
             />
             
-            <section className="py-20 md:py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
+            <section className="py-20 md:py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
 
                 <div className="max-w-4xl mx-auto px-6 relative z-10">
                     <motion.div
@@ -24,10 +24,10 @@ export default function PrivacyPage() {
                         className="bg-gray-50 border border-gray-200 p-8 md:p-16 relative"
                     >
                         {/* Decorative Markers */}
-                        <div className="absolute top-0 left-0 w-2 h-2 bg-[#d4a853]" />
-                        <div className="absolute top-0 right-0 w-2 h-2 bg-[#d4a853]" />
-                        <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#d4a853]" />
-                        <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#d4a853]" />
+                        <div className="absolute top-0 left-0 w-2 h-2 bg-[#2563eb]" />
+                        <div className="absolute top-0 right-0 w-2 h-2 bg-[#2563eb]" />
+                        <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#2563eb]" />
+                        <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#2563eb]" />
 
                         <div className="mb-12 border-b border-gray-200 pb-8">
                             <p className="font-mono text-xs tracking-widest text-gray-500 mb-4">
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
                         <div className="space-y-12">
                             <section>
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3">
-                                    <span className="text-[#d4a853] font-mono text-xs">01</span>
+                                    <span className="text-[#2563eb] font-mono text-xs">01</span>
                                     個人情報の定義
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-loose">
@@ -51,7 +51,7 @@ export default function PrivacyPage() {
 
                             <section>
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3">
-                                    <span className="text-[#d4a853] font-mono text-xs">02</span>
+                                    <span className="text-[#2563eb] font-mono text-xs">02</span>
                                     個人情報の収集方法
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-loose">
@@ -61,13 +61,13 @@ export default function PrivacyPage() {
 
                             <section>
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3">
-                                    <span className="text-[#d4a853] font-mono text-xs">03</span>
+                                    <span className="text-[#2563eb] font-mono text-xs">03</span>
                                     個人情報の利用目的
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-loose mb-4">
                                     当社が個人情報を利用する目的は、以下のとおりです。
                                 </p>
-                                <ul className="list-disc list-inside text-sm text-gray-600 leading-loose pl-4 marker:text-[#d4a853]">
+                                <ul className="list-disc list-inside text-sm text-gray-600 leading-loose pl-4 marker:text-[#2563eb]">
                                     <li>当社サービスの提供・運営のため</li>
                                     <li>ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）</li>
                                     <li>ユーザーが利用中のサービスの新機能、更新情報、キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため</li>
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
 
                             <section>
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3">
-                                    <span className="text-[#d4a853] font-mono text-xs">04</span>
+                                    <span className="text-[#2563eb] font-mono text-xs">04</span>
                                     利用目的の変更
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-loose">
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
 
                             <section>
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3">
-                                    <span className="text-[#d4a853] font-mono text-xs">05</span>
+                                    <span className="text-[#2563eb] font-mono text-xs">05</span>
                                     個人情報の第三者提供
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-loose">
@@ -100,7 +100,7 @@ export default function PrivacyPage() {
 
                             <section>
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3">
-                                    <span className="text-[#d4a853] font-mono text-xs">06</span>
+                                    <span className="text-[#2563eb] font-mono text-xs">06</span>
                                     お問い合わせ窓口
                                 </h3>
                                 <p className="text-sm text-gray-600 leading-loose">

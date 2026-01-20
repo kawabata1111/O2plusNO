@@ -7,7 +7,7 @@ import DecodeText from './DecodeText';
 
 export default function Contact() {
     return (
-        <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
+        <section className="py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
             
 
             <div className="max-w-4xl mx-auto px-6 relative z-10">
@@ -16,16 +16,16 @@ export default function Contact() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="border-2 border-[#1e1e1e] p-1 relative"
+                    className="border-2 border-[#1e3a5f] p-1 relative"
                 >
                     {/* Decorative Corner Brackets */}
-                    <div className="absolute -top-2 -left-2 w-6 h-6 border-t-4 border-l-4 border-[#d4a853]" />
-                    <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-4 border-r-4 border-[#d4a853]" />
+                    <div className="absolute -top-2 -left-2 w-6 h-6 border-t-4 border-l-4 border-[#2563eb]" />
+                    <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-4 border-r-4 border-[#2563eb]" />
 
                     <div className="bg-gray-50 p-12 md:p-20 text-center relative overflow-hidden">
                         
 
-                        <h2 className="text-[#d4a853] font-bold tracking-[0.4em] uppercase mb-6 text-xs font-mono">
+                        <h2 className="text-[#2563eb] font-bold tracking-[0.4em] uppercase mb-6 text-xs font-mono">
                             // 04_CONTACT_NODE
                         </h2>
                         
@@ -51,7 +51,7 @@ export default function Contact() {
 
                                                         whileTap={{ scale: 0.98 }}
 
-                                                        className="group relative inline-flex items-center justify-center gap-2 md:gap-4 bg-[#1e1e1e] text-white px-8 md:px-16 py-5 mb-16 font-mono text-xs md:text-sm tracking-widest hover:bg-[#d4a853] transition-colors duration-300 whitespace-nowrap"
+                                                        className="group relative inline-flex items-center justify-center gap-2 md:gap-4 bg-[#1e3a5f] text-white px-8 md:px-16 py-5 mb-16 font-mono text-xs md:text-sm tracking-widest hover:bg-[#2563eb] transition-colors duration-300 whitespace-nowrap"
 
                                                     >
 
@@ -65,7 +65,7 @@ export default function Contact() {
 
                         <div className="grid md:grid-cols-2 gap-8 border-t border-gray-200 pt-12 text-left">
                             <div className="group cursor-pointer">
-                                <div className="flex items-center gap-3 mb-2 text-gray-400 group-hover:text-[#d4a853] transition-colors">
+                                <div className="flex items-center gap-3 mb-2 text-gray-400 group-hover:text-[#2563eb] transition-colors">
                                     <Phone size={16} />
                                     <span className="text-[10px] font-mono tracking-widest">VOICE_COMM / お電話</span>
                                 </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                             </div>
                             
                             <div className="group cursor-pointer">
-                                <div className="flex items-center gap-3 mb-2 text-gray-400 group-hover:text-[#d4a853] transition-colors">
+                                <div className="flex items-center gap-3 mb-2 text-gray-400 group-hover:text-[#2563eb] transition-colors">
                                     <Mail size={16} />
                                     <span className="text-[10px] font-mono tracking-widest">DATA_PACKET / メール</span>
                                 </div>

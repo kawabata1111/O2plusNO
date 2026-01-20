@@ -13,7 +13,7 @@ export default function CompanyPage() {
                 subtitle="03_COMPANY" 
             />
             
-            <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
+            <section className="py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
 
                 <div className="max-w-4xl mx-auto px-6 relative z-10">
                     <motion.div
@@ -24,10 +24,10 @@ export default function CompanyPage() {
                         className="bg-gray-50 border border-gray-200 p-8 md:p-12 relative"
                     >
                         {/* Decorative Markers */}
-                        <div className="absolute top-0 left-0 w-2 h-2 bg-[#d4a853]" />
-                        <div className="absolute top-0 right-0 w-2 h-2 bg-[#d4a853]" />
-                        <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#d4a853]" />
-                        <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#d4a853]" />
+                        <div className="absolute top-0 left-0 w-2 h-2 bg-[#2563eb]" />
+                        <div className="absolute top-0 right-0 w-2 h-2 bg-[#2563eb]" />
+                        <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#2563eb]" />
+                        <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#2563eb]" />
 
 
                         <dl className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-y-8">
@@ -45,10 +45,10 @@ export default function CompanyPage() {
                             ].map((item, index) => (
                                 <div key={index} className="contents group">
                                     <dt className="text-sm font-bold text-gray-400 font-mono flex items-center gap-2">
-                                        <span className="w-1 h-1 bg-[#d4a853] opacity-0 group-hover:opacity-100 transition-opacity" />
+                                        <span className="w-1 h-1 bg-[#2563eb] opacity-0 group-hover:opacity-100 transition-opacity" />
                                         {item.dt}
                                     </dt>
-                                    <dd className="text-base font-medium text-[#1e1e1e] border-b border-gray-200 pb-2 group-hover:border-[#d4a853] transition-colors">
+                                    <dd className="text-base font-medium text-[#1e3a5f] border-b border-gray-200 pb-2 group-hover:border-[#2563eb] transition-colors">
                                         {item.dd}
                                     </dd>
                                 </div>
@@ -64,7 +64,7 @@ export default function CompanyPage() {
                         className="mt-24 relative"
                     >
                         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-                            <h2 className="text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap">ACCESS / <span className="text-[#d4a853]">アクセス</span></h2>
+                            <h2 className="text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap">ACCESS / <span className="text-[#2563eb]">アクセス</span></h2>
                         </div>
                         
                         {/* Map Container with Tech Overlay */}
@@ -81,15 +81,15 @@ export default function CompanyPage() {
                             />
                             
                             {/* Target UI Overlay */}
-                            <div className="absolute inset-0 pointer-events-none border border-[#d4a853]/20">
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-[#d4a853] rounded-full flex items-center justify-center">
-                                    <div className="w-1 h-1 bg-[#d4a853] rounded-full" />
+                            <div className="absolute inset-0 pointer-events-none border border-[#2563eb]/20">
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-[#2563eb] rounded-full flex items-center justify-center">
+                                    <div className="w-1 h-1 bg-[#2563eb] rounded-full" />
                                 </div>
-                                <div className="absolute top-1/2 left-0 w-full h-[1px] bg-[#d4a853]/20" />
-                                <div className="absolute top-0 left-1/2 h-full w-[1px] bg-[#d4a853]/20" />
+                                <div className="absolute top-1/2 left-0 w-full h-[1px] bg-[#2563eb]/20" />
+                                <div className="absolute top-0 left-1/2 h-full w-[1px] bg-[#2563eb]/20" />
                             </div>
                         </div>
-                         <p className="mt-6 text-sm font-mono text-gray-500 border-l-2 border-[#d4a853] pl-4">
+                         <p className="mt-6 text-sm font-mono text-gray-500 border-l-2 border-[#2563eb] pl-4">
                             〒351-0014 埼玉県朝霞市膝折町1-1-53
                         </p>
                     </motion.div>

@@ -5,7 +5,7 @@ import DecodeText from './DecodeText';
 
 export default function Philosophy() {
     return (
-        <section id="philosophy" className="relative section-padding overflow-hidden bg-white text-[#1e1e1e]">
+        <section id="philosophy" className="relative section-padding overflow-hidden bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f]">
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
@@ -13,16 +13,16 @@ export default function Philosophy() {
                     {/* Left: Decoding Heading */}
                     <div className="flex flex-col justify-center">
                         <div className="mb-6 flex items-center gap-2">
-                            <span className="w-2 h-2 bg-[#d4a853] animate-pulse" />
+                            <span className="w-2 h-2 bg-[#2563eb] animate-pulse" />
                             <p className="font-mono text-[10px] tracking-widest text-gray-400">
-                                SYSTEM_CORE: <span className="text-[#1e1e1e]">企業理念</span>
+                                SYSTEM_CORE: <span className="text-[#1e3a5f]">企業理念</span>
                             </p>
                         </div>
                         
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight mb-4">
-                            <DecodeText text="TRIGGER" className="block text-[#1e1e1e]" />
-                            <DecodeText text="TO FIND" className="block text-[#1e1e1e]" />
-                            <span className="text-[#d4a853]">
+                            <DecodeText text="TRIGGER" className="block text-[#1e3a5f]" />
+                            <DecodeText text="TO FIND" className="block text-[#1e3a5f]" />
+                            <span className="text-[#2563eb]">
                                 <DecodeText text="YOUR TRUE SELF" />
                             </span>
                         </h2>
@@ -36,7 +36,7 @@ export default function Philosophy() {
                                 initial={{ x: '-100%' }}
                                 whileInView={{ x: '100%' }}
                                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                                className="absolute top-0 left-0 w-1/3 h-full bg-[#d4a853]"
+                                className="absolute top-0 left-0 w-1/3 h-full bg-[#2563eb]"
                             />
                         </div>
                     </div>
@@ -44,10 +44,10 @@ export default function Philosophy() {
                     {/* Right: Technical Description */}
                     <div className="flex flex-col justify-center space-y-8 md:space-y-12 mb-8 lg:mb-0">
                         <div>
-                            <h3 className="font-mono text-[10px] text-gray-400 mb-4 border-l-2 border-[#d4a853] pl-4 uppercase tracking-widest">
+                            <h3 className="font-mono text-[10px] text-gray-400 mb-4 border-l-2 border-[#2563eb] pl-4 uppercase tracking-widest">
                                 MISSION_STATEMENT / ミッション
                             </h3>
-                            <p className="text-lg md:text-xl font-bold font-sans leading-relaxed text-[#1e1e1e]">
+                            <p className="text-lg md:text-xl font-bold font-sans leading-relaxed text-[#1e3a5f]">
                                 自分の力で生き抜ける人を増やし、<br/>
                                 その力を利他に向けることができる<br/>
                                 社会の創造。
@@ -76,7 +76,7 @@ export default function Philosophy() {
                                 {[...Array(4)].map((_, i) => (
                                     <div key={i} className="w-1 h-3 bg-gray-200" />
                                 ))}
-                                <div className="w-1 h-3 bg-[#d4a853]" />
+                                <div className="w-1 h-3 bg-[#2563eb]" />
                             </div>
                         </div>
                     </div>

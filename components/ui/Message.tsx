@@ -25,7 +25,7 @@ const GlitchImage = () => {
                 className="object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
             />
             {/* Glitch Layers */}
-            <div className={`absolute inset-0 bg-[#d4a853] mix-blend-overlay opacity-0 ${isGlitching ? 'opacity-20 translate-x-2' : ''} transition-all duration-75`}></div>
+            <div className={`absolute inset-0 bg-[#2563eb] mix-blend-overlay opacity-0 ${isGlitching ? 'opacity-20 translate-x-2' : ''} transition-all duration-75`}></div>
             <div className={`absolute inset-0 bg-cyan-500 mix-blend-overlay opacity-0 ${isGlitching ? 'opacity-20 -translate-x-2' : ''} transition-all duration-75`}></div>
             {/* Scanline */}
             <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_4px] pointer-events-none opacity-20" />
@@ -35,7 +35,7 @@ const GlitchImage = () => {
 
 export default function Message() {
     return (
-        <section className="relative section-padding overflow-hidden bg-[#fafaf9] text-[#1e1e1e]">
+        <section className="relative section-padding overflow-hidden bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f]">
             
 
             <div className="max-w-7xl mx-auto relative z-10">
@@ -49,8 +49,8 @@ export default function Message() {
                         transition={{ duration: 1 }}
                         className="relative aspect-[3/4] lg:aspect-[4/5] border border-gray-900 p-1 md:p-2"
                     >
-                        <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-[#d4a853]" />
-                        <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-[#d4a853]" />
+                        <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-[#2563eb]" />
+                        <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-[#2563eb]" />
                         
                         <GlitchImage />
                         
@@ -65,7 +65,7 @@ export default function Message() {
                         className="flex flex-col justify-center"
                     >
                         <div className="flex items-center gap-2 mb-8">
-                            <span className="w-2 h-2 bg-[#d4a853] rounded-full animate-pulse" />
+                            <span className="w-2 h-2 bg-[#2563eb] rounded-full animate-pulse" />
                             <p className="font-mono text-[10px] tracking-widest text-gray-500 uppercase">
                                 [ SYSTEM_MSG: <DecodeText text="MESSAGE" className="inline-block" /> / 代表メッセージ ]
                             </p>
@@ -73,11 +73,11 @@ export default function Message() {
                         
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-4 leading-none uppercase">
                             <DecodeText text="CHANGE" className="block" />
-                            <DecodeText text="THE" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4a853] to-yellow-600">
+                            <DecodeText text="THE" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2563eb] to-yellow-600">
                                 <DecodeText text="FUTURE" />
                             </span>
                         </h2>
-                        <p className="text-base md:text-lg font-bold text-[#1e1e1e] mb-10 md:mb-12 tracking-wider">
+                        <p className="text-base md:text-lg font-bold text-[#1e3a5f] mb-10 md:mb-12 tracking-wider">
                             未来を変える、勇気を。
                         </p>
                         

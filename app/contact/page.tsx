@@ -14,7 +14,7 @@ export default function ContactPage() {
                 subtitle="04_CONTACT" 
             />
             
-            <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
+            <section className="py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
 
                 <div className="max-w-6xl mx-auto px-6 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-20">
@@ -29,7 +29,7 @@ export default function ContactPage() {
                             transition={{ duration: 0.8 }}
                         >
                             <div className="mb-12">
-                                <h2 className="text-[#d4a853] font-bold tracking-[0.4em] uppercase mb-6 text-xs font-mono">
+                                <h2 className="text-[#2563eb] font-bold tracking-[0.4em] uppercase mb-6 text-xs font-mono">
                                     // INITIATE_COMMUNICATION
                                 </h2>
                                 <p className="text-4xl md:text-5xl font-bold tracking-tighter mb-8 leading-none">
@@ -46,8 +46,8 @@ export default function ContactPage() {
                             </div>
 
                             <div className="space-y-8">
-                                <div className="group border border-gray-200 p-6 hover:border-[#d4a853] transition-colors bg-gray-50">
-                                    <div className="flex items-center gap-4 mb-2 text-gray-400 group-hover:text-[#d4a853] transition-colors">
+                                <div className="group border border-gray-200 p-6 hover:border-[#2563eb] transition-colors bg-gray-50">
+                                    <div className="flex items-center gap-4 mb-2 text-gray-400 group-hover:text-[#2563eb] transition-colors">
                                         <Phone size={18} />
                                         <span className="text-[10px] font-mono tracking-widest">VOICE_CHANNEL / お電話</span>
                                     </div>
@@ -55,8 +55,8 @@ export default function ContactPage() {
                                     <p className="text-[10px] text-gray-400 mt-2 font-mono">AVAILABILITY: MON-FRI 10:00-18:00</p>
                                 </div>
 
-                                 <div className="group border border-gray-200 p-6 hover:border-[#d4a853] transition-colors bg-gray-50">
-                                    <div className="flex items-center gap-4 mb-2 text-gray-400 group-hover:text-[#d4a853] transition-colors">
+                                 <div className="group border border-gray-200 p-6 hover:border-[#2563eb] transition-colors bg-gray-50">
+                                    <div className="flex items-center gap-4 mb-2 text-gray-400 group-hover:text-[#2563eb] transition-colors">
                                         <Mail size={18} />
                                         <span className="text-[10px] font-mono tracking-widest">DATA_PACKET / メール</span>
                                     </div>
@@ -76,8 +76,8 @@ export default function ContactPage() {
                         >
                             
                             {/* Corner Markers */}
-                            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#1e1e1e]" />
-                            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#1e1e1e]" />
+                            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#1e3a5f]" />
+                            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#1e3a5f]" />
 
                             <form 
                                 action="https://formsubmit.co/o2plusno20171011@gmail.com" 
@@ -91,40 +91,40 @@ export default function ContactPage() {
                                 <input type="hidden" name="_subject" value="【O2plusNO】お問い合わせがありました" />
 
                                 <div className="space-y-2 group">
-                                    <label className="text-xs font-mono text-[#d4a853] tracking-widest block mb-1">
+                                    <label className="text-xs font-mono text-[#2563eb] tracking-widest block mb-1">
                                         // INPUT: YOUR_NAME <span className="text-red-500">*</span>
                                     </label>
                                     <input 
                                         type="text" 
                                         name="name"
                                         required
-                                        className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#d4a853] focus:bg-white outline-none transition-all text-[#1e1e1e] placeholder-gray-400" 
+                                        className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#2563eb] focus:bg-white outline-none transition-all text-[#1e3a5f] placeholder-gray-400" 
                                         placeholder="_" 
                                     />
                                 </div>
 
                                  <div className="space-y-2 group">
-                                    <label className="text-xs font-mono text-[#d4a853] tracking-widest block mb-1">
+                                    <label className="text-xs font-mono text-[#2563eb] tracking-widest block mb-1">
                                         // INPUT: EMAIL_ADDRESS <span className="text-red-500">*</span>
                                     </label>
                                     <input 
                                         type="email" 
                                         name="email"
                                         required
-                                        className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#d4a853] focus:bg-white outline-none transition-all text-[#1e1e1e] placeholder-gray-400" 
+                                        className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#2563eb] focus:bg-white outline-none transition-all text-[#1e3a5f] placeholder-gray-400" 
                                         placeholder="_" 
                                     />
                                 </div>
 
                                  <div className="space-y-2 group">
-                                    <label className="text-xs font-mono text-[#d4a853] tracking-widest block mb-1">
+                                    <label className="text-xs font-mono text-[#2563eb] tracking-widest block mb-1">
                                         // INPUT: MESSAGE_BODY <span className="text-red-500">*</span>
                                     </label>
                                     <textarea 
                                         rows={5} 
                                         name="message"
                                         required
-                                        className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#d4a853] focus:bg-white outline-none transition-all resize-none text-[#1e1e1e] placeholder-gray-400" 
+                                        className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-sm font-mono focus:border-[#2563eb] focus:bg-white outline-none transition-all resize-none text-[#1e3a5f] placeholder-gray-400" 
                                         placeholder="_"
                                     ></textarea>
                                 </div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                                 <motion.button
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="w-full bg-[#1e1e1e] text-white font-bold py-4 font-mono text-xs md:text-sm tracking-widest hover:bg-[#d4a853] transition-colors flex items-center justify-center gap-2 shadow-lg whitespace-nowrap"
+                                    className="w-full bg-[#1e3a5f] text-white font-bold py-4 font-mono text-xs md:text-sm tracking-widest hover:bg-[#2563eb] transition-colors flex items-center justify-center gap-2 shadow-lg whitespace-nowrap"
                                     type="submit"
                                 >
                                     [ TRANSMIT_DATA ] <Send size={16} />

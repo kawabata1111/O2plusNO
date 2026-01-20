@@ -14,7 +14,7 @@ export default function ThanksPage() {
                 subtitle="00_SUCCESS" 
             />
             
-            <section className="py-40 bg-white text-[#1e1e1e] relative overflow-hidden">
+            <section className="py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
 
                 <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
                     <motion.div
@@ -38,7 +38,7 @@ export default function ThanksPage() {
                             </span>
                         </p>
 
-                        <Link href="/" className="inline-flex items-center gap-3 bg-[#1e1e1e] text-white px-10 py-4 font-mono text-sm tracking-widest hover:bg-[#d4a853] transition-colors shadow-lg">
+                        <Link href="/" className="inline-flex items-center gap-3 bg-[#1e3a5f] text-white px-10 py-4 font-mono text-sm tracking-widest hover:bg-[#2563eb] transition-colors shadow-lg">
                             <ArrowLeft size={16} /> [ RETURN_HOME ]
                         </Link>
                     </motion.div>

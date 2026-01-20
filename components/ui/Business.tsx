@@ -51,7 +51,7 @@ const businesses = [
 
 export default function Business() {
     return (
-        <section className="section-padding bg-white text-[#1e1e1e] relative overflow-hidden">
+        <section className="section-padding bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
             
 
             <div className="max-w-7xl mx-auto relative z-10">
@@ -65,7 +65,7 @@ export default function Business() {
                     className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 md:mb-32 border-b border-gray-200 pb-8 gap-6"
                 >
                     <div>
-                        <h2 className="text-[#d4a853] text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-mono">
+                        <h2 className="text-[#2563eb] text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-mono">
                             // <DecodeText text="OUR BUSINESS" />
                         </h2>
                         <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
@@ -108,10 +108,10 @@ export default function Business() {
                                 </div>
 
                                 <div className="px-6 pb-16 md:pb-20">
-                                    <p className="text-[10px] font-mono text-[#d4a853] mb-2 tracking-widest uppercase">
+                                    <p className="text-[10px] font-mono text-[#2563eb] mb-2 tracking-widest uppercase">
                                         {item.subtitle}
                                     </p>
-                                    <h3 className="text-xl font-bold mb-1 group-hover:text-[#d4a853] transition-colors">
+                                    <h3 className="text-xl font-bold mb-1 group-hover:text-[#2563eb] transition-colors">
                                         {item.title}
                                     </h3>
                                     <p className="text-xs font-bold text-gray-500 mb-6 border-b border-gray-200 pb-4 inline-block">
@@ -133,7 +133,7 @@ export default function Business() {
 
                                     <Link 
                                         href={item.link} 
-                                        className="absolute bottom-0 right-0 bg-[#1e1e1e] text-white px-6 py-3 font-mono text-[10px] md:text-xs hover:bg-[#d4a853] transition-colors flex items-center gap-2"
+                                        className="absolute bottom-0 right-0 bg-[#1e3a5f] text-white px-6 py-3 font-mono text-[10px] md:text-xs hover:bg-[#2563eb] transition-colors flex items-center gap-2"
                                         style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0 100%)' }}
                                     >
                                         詳細を見る / VIEW <ArrowRight size={12} />

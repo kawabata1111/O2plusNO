@@ -21,18 +21,18 @@ const businesses = [
                 <ul className="space-y-6 mb-8">
                     <li className="group">
                         <div className="flex items-start gap-4">
-                            <span className="w-1 h-12 bg-[#d4a853] flex-shrink-0 transition-transform group-hover:scale-y-110" />
+                            <span className="w-1 h-12 bg-[#2563eb] flex-shrink-0 transition-transform group-hover:scale-y-110" />
                             <div>
-                                <strong className="block text-[#1e1e1e] text-lg font-bold mb-1 tracking-tight">日本製中古品の輸出</strong>
+                                <strong className="block text-[#1e3a5f] text-lg font-bold mb-1 tracking-tight">日本製中古品の輸出</strong>
                                 <span className="text-sm text-gray-500 font-light">主に中古カメラなどの精密機器を中心に、品質の高い日本製品を海外市場へ届けています。</span>
                             </div>
                         </div>
                     </li>
                     <li className="group">
                         <div className="flex items-start gap-4">
-                            <span className="w-1 h-12 bg-[#d4a853] flex-shrink-0 transition-transform group-hover:scale-y-110" />
+                            <span className="w-1 h-12 bg-[#2563eb] flex-shrink-0 transition-transform group-hover:scale-y-110" />
                             <div>
-                                <strong className="block text-[#1e1e1e] text-lg font-bold mb-1 tracking-tight">アメリカ国内物販</strong>
+                                <strong className="block text-[#1e3a5f] text-lg font-bold mb-1 tracking-tight">アメリカ国内物販</strong>
                                 <span className="text-sm text-gray-500 font-light">eBayのプラットフォームを最大限に活用し、米国国内での流通・販売も実施しています。</span>
                             </div>
                         </div>
@@ -50,12 +50,12 @@ const businesses = [
         description: (
             <>
                 <p className="mb-8 font-light leading-relaxed">
-                    在宅ワークに特化したコンサルティングを<strong className="text-[#d4a853]">【 完全無料 】</strong>で提供しています。<br/>
+                    在宅ワークに特化したコンサルティングを<strong className="text-[#2563eb]">【 完全無料 】</strong>で提供しています。<br/>
                     eBay物販やアフィリエイトを応用したポイ活など、スキルゼロからでも自立できるノウハウを指導。<br/>
-                    これまでに<strong className="border-b-2 border-[#d4a853] pb-1">累計2,500名以上</strong>の方をサポートしてきました。
+                    これまでに<strong className="border-b-2 border-[#2563eb] pb-1">累計2,500名以上</strong>の方をサポートしてきました。
                 </p>
-                <div className="bg-gray-50 p-8 border-l-4 border-[#1e1e1e] mb-8 relative">
-                    <p className="font-bold text-[#1e1e1e] mb-2 font-mono text-xs tracking-widest">// FREE_CONSULTATION</p>
+                <div className="bg-gray-50 p-8 border-l-4 border-[#1e3a5f] mb-8 relative">
+                    <p className="font-bold text-[#1e3a5f] mb-2 font-mono text-xs tracking-widest">// FREE_CONSULTATION</p>
                     <p className="text-gray-600 mb-6 text-sm">
                         初期費用などは一切かかりません。まずはお気軽にご相談ください。
                     </p>
@@ -77,20 +77,20 @@ const businesses = [
         description: (
             <>
                 <p className="mb-8 font-light leading-relaxed">
-                    代表自身の<strong className="text-[#1e1e1e] font-bold">元SEとしての経験</strong>を活かし、SE業界専門の営業代理を行っています。<br/>
+                    代表自身の<strong className="text-[#1e3a5f] font-bold">元SEとしての経験</strong>を活かし、SE業界専門の営業代理を行っています。<br/>
                     業界20年以上の「1次請け企業」と協業し、以下のサービスを展開中です。
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
-                    <div className="bg-white p-6 shadow-sm border border-gray-100 group hover:border-[#d4a853] transition-colors">
-                        <p className="text-[#d4a853] font-mono text-[10px] mb-2 tracking-widest">TYPE_A</p>
-                        <h4 className="font-bold text-[#1e1e1e] text-lg mb-2">未経験SEサービス</h4>
+                    <div className="bg-white p-6 shadow-sm border border-gray-100 group hover:border-[#2563eb] transition-colors">
+                        <p className="text-[#2563eb] font-mono text-[10px] mb-2 tracking-widest">TYPE_A</p>
+                        <h4 className="font-bold text-[#1e3a5f] text-lg mb-2">未経験SEサービス</h4>
                         <p className="text-xs text-gray-500 leading-relaxed font-light">
                             SE業界未経験の方でも、全くスキルのない状態から正社員SEを目指せるキャリアパスを提供します。
                         </p>
                     </div>
-                    <div className="bg-white p-6 shadow-sm border border-gray-100 group hover:border-[#d4a853] transition-colors">
-                        <p className="text-[#d4a853] font-mono text-[10px] mb-2 tracking-widest">TYPE_B</p>
-                        <h4 className="font-bold text-[#1e1e1e] text-lg mb-2">フリーランスSES</h4>
+                    <div className="bg-white p-6 shadow-sm border border-gray-100 group hover:border-[#2563eb] transition-colors">
+                        <p className="text-[#2563eb] font-mono text-[10px] mb-2 tracking-widest">TYPE_B</p>
+                        <h4 className="font-bold text-[#1e3a5f] text-lg mb-2">フリーランスSES</h4>
                         <p className="text-xs text-gray-500 leading-relaxed font-light">
                             現役SEの方に「1次請け」と直接契約できるルートをご案内。仲介手数料を省き、年収向上を支援します。
                         </p>
@@ -110,7 +110,7 @@ export default function BusinessPage() {
                 subtitle="02_BUSINESS" 
             />
             
-            <section className="bg-white text-[#1e1e1e] relative overflow-hidden">
+            <section className="bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
 
                 <div className="max-w-7xl mx-auto px-6 py-20 md:py-40 relative z-10">
                     <div className="space-y-32">
@@ -136,8 +136,8 @@ export default function BusinessPage() {
                                         
                                         {/* Tech Overlay */}
                                         <div className="absolute inset-0 border border-white/20 pointer-events-none">
-                                            <div className="absolute top-4 left-4 w-2 h-2 bg-[#d4a853]" />
-                                            <div className="absolute bottom-4 right-4 w-2 h-2 bg-[#d4a853]" />
+                                            <div className="absolute top-4 left-4 w-2 h-2 bg-[#2563eb]" />
+                                            <div className="absolute bottom-4 right-4 w-2 h-2 bg-[#2563eb]" />
                                         </div>
                                     </div>
                                     
@@ -148,7 +148,7 @@ export default function BusinessPage() {
                                 {/* Text Side */}
                                 <div className="w-full lg:w-1/2">
                                     <div className="flex items-center gap-4 mb-6">
-                                        <span className="text-[#d4a853] font-mono text-sm tracking-widest">{item.id}</span>
+                                        <span className="text-[#2563eb] font-mono text-sm tracking-widest">{item.id}</span>
                                         <div className="h-[1px] flex-grow bg-gray-200" />
                                         <span className="text-gray-400 font-mono text-xs tracking-widest uppercase">Business_Domain</span>
                                     </div>
@@ -168,7 +168,7 @@ export default function BusinessPage() {
                                                 href={item.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-2 bg-[#1e1e1e] text-white px-8 py-4 text-sm font-mono tracking-widest hover:bg-[#d4a853] transition-colors"
+                                                className="inline-flex items-center gap-2 bg-[#1e3a5f] text-white px-8 py-4 text-sm font-mono tracking-widest hover:bg-[#2563eb] transition-colors"
                                             >
                                                 詳細LPを見る <ArrowRight size={16} />
                                             </a>

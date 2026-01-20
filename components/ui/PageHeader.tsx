@@ -46,12 +46,12 @@ interface PageHeaderProps {
 
 export default function PageHeader({ title, subtitle, enTitle }: PageHeaderProps) {
     return (
-        <section className="relative h-[40vh] md:h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden bg-[#fafaf9] text-[#1e1e1e]">
+        <section className="relative h-[40vh] md:h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f]">
 
             {/* Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-                <div className="absolute top-1/4 left-10 w-1.5 h-1.5 bg-[#d4a853] animate-pulse" />
-                <div className="absolute bottom-1/4 right-10 w-1.5 h-1.5 bg-[#d4a853] animate-pulse delay-700" />
+                <div className="absolute top-1/4 left-10 w-1.5 h-1.5 bg-[#2563eb] animate-pulse" />
+                <div className="absolute bottom-1/4 right-10 w-1.5 h-1.5 bg-[#2563eb] animate-pulse delay-700" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] border border-gray-200 rounded-full opacity-30 animate-[spin_60s_linear_infinite]" />
             </div>
 
@@ -62,11 +62,11 @@ export default function PageHeader({ title, subtitle, enTitle }: PageHeaderProps
                     transition={{ duration: 0.8 }}
                 >
                     <div className="flex items-center justify-center gap-2 mb-4 md:mb-6">
-                        <span className="h-[1px] w-6 md:w-8 bg-[#d4a853]" />
-                        <p className="text-[#d4a853] font-bold tracking-[0.3em] uppercase text-[9px] md:text-xs font-mono">
+                        <span className="h-[1px] w-6 md:w-8 bg-[#2563eb]" />
+                        <p className="text-[#2563eb] font-bold tracking-[0.3em] uppercase text-[9px] md:text-xs font-mono">
                             {subtitle}
                         </p>
-                        <span className="h-[1px] w-6 md:w-8 bg-[#d4a853]" />
+                        <span className="h-[1px] w-6 md:w-8 bg-[#2563eb]" />
                     </div>
 
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tighter mb-4 leading-none font-sans uppercase">
@@ -86,9 +86,9 @@ export default function PageHeader({ title, subtitle, enTitle }: PageHeaderProps
                     className="absolute bottom-4 md:bottom-8 left-0 w-full px-6 flex justify-between items-center text-[9px] font-mono text-gray-400 border-t border-gray-200 pt-4"
                 >
                     <div className="flex gap-2">
-                        <Link href="/" className="hover:text-[#d4a853] transition-colors">HOME</Link>
+                        <Link href="/" className="hover:text-[#2563eb] transition-colors">HOME</Link>
                         <span>/</span>
-                        <span className="text-[#1e1e1e] truncate max-w-[150px]">{enTitle}</span>
+                        <span className="text-[#1e3a5f] truncate max-w-[150px]">{enTitle}</span>
                     </div>
                 </motion.div>
             </div>
