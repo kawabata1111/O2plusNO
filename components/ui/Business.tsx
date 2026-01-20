@@ -66,7 +66,7 @@ export default function Business() {
                 >
                     <div>
                         <h2 className="text-cyan-600 text-[10px] font-bold tracking-[0.4em] uppercase mb-4 font-cinzel">
-                            // <DecodeText text="OUR BUSINESS" />
+                            // <DecodeText text="OUR BUSINESS" className="font-cinzel" />
                         </h2>
                         <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight font-serif text-slate-900">
                             <DecodeText text="CREATE VALUE" className="block font-cinzel" />

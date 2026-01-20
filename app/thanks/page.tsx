@@ -14,7 +14,7 @@ export default function ThanksPage() {
                 subtitle="00_SUCCESS" 
             />
             
-            <section className="py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-[#1e3a5f] relative overflow-hidden">
+            <section className="py-40 bg-gradient-to-br from-cyan-50 via-blue-50 to-white text-slate-900 relative overflow-hidden">
 
                 <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
                     <motion.div
@@ -24,21 +24,21 @@ export default function ThanksPage() {
                         transition={{ duration: 0.8 }}
                     >
                         
-                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8 leading-tight text-slate-900">
                             お問い合わせ<br/>ありがとうございました。
                         </h2>
                         
-                        <p className="text-gray-600 mb-16 font-sans text-sm md:text-base max-w-lg mx-auto leading-loose">
+                        <p className="text-slate-600 mb-16 font-sans text-sm md:text-base max-w-lg mx-auto leading-loose font-medium">
                             ご入力いただいた内容は正常に送信されました。<br/>
                             担当者より折り返しご連絡させていただきますので、<br/>
                             今しばらくお待ちください。<br/>
-                            <span className="text-xs text-gray-400 font-mono block mt-4">
+                            <span className="text-xs text-slate-400 font-cinzel block mt-4 tracking-wider">
                                 {`> Auto-reply mail has been sent.`}<br/>
                                 {`> We will contact you shortly.`}
                             </span>
                         </p>
 
-                        <Link href="/" className="inline-flex items-center gap-3 bg-[#1e3a5f] text-white px-10 py-4 font-mono text-sm tracking-widest hover:bg-[#2563eb] transition-colors shadow-lg">
+                        <Link href="/" className="inline-flex items-center gap-3 bg-slate-900 text-white px-10 py-4 font-cinzel text-sm tracking-widest hover:bg-cyan-600 transition-colors shadow-lg rounded-sm">
                             <ArrowLeft size={16} /> [ RETURN_HOME ]
                         </Link>
                     </motion.div>

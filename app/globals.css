@@ -3,8 +3,8 @@
 @theme {
   --font-sans: var(--font-noto-sans-jp), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-noto-serif-jp), ui-serif, serif;
-  --font-cormorant: var(--font-cormorant), serif;
-  --font-cinzel: var(--font-cinzel), serif;
+  --font-cormorant: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-cinzel: var(--font-cinzel), "Cinzel", serif;
 
   --color-primary: #0ea5e9;
   --color-primary-foreground: #ffffff;
@@ -20,6 +20,20 @@
 
   .text-gold {
     @apply text-[#0ea5e9]; /* Renamed concept, keeping class for compatibility but using blue */
+  }
+
+  /* Explicit Font Utilities */
+  .font-cinzel {
+    font-family: var(--font-cinzel), serif;
+  }
+  .font-serif {
+    font-family: var(--font-noto-serif-jp), serif;
+  }
+  .font-sans {
+    font-family: var(--font-noto-sans-jp), sans-serif;
+  }
+  .font-cormorant {
+    font-family: var(--font-cormorant), serif;
   }
 
   /* Glassmorphism Utilities (Light Theme) */
