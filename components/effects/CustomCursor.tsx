@@ -28,7 +28,7 @@ export default function CustomCursor() {
 
     return (
         <motion.div
-            className="pointer-events-none fixed left-0 top-0 z-[99999] hidden md:block mix-blend-difference"
+            className="pointer-events-none fixed left-0 top-0 z-[99999] hidden md:block"
             style={{
                 x: cursorXSpring,
                 y: cursorYSpring,
@@ -37,10 +37,10 @@ export default function CustomCursor() {
         >
             <div className="relative h-8 w-8">
                 {/* Center Dot */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full" />
-                
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#2563eb] rounded-full shadow-lg shadow-blue-500/50" />
+
                 {/* Outer Ring */}
-                <div className="absolute top-0 left-0 w-full h-full border border-white rounded-full opacity-50" />
+                <div className="absolute top-0 left-0 w-full h-full border-2 border-[#2563eb]/60 rounded-full" />
             </div>
         </motion.div>
     );
