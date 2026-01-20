@@ -48,9 +48,11 @@ export default function Header() {
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-[10000] transition-all duration-500 ease-in-out",
-                scrolled || isOpen || pathname !== '/'
-                    ? "bg-white/80 backdrop-blur-md py-4 shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-b border-white/20" 
-                    : "bg-transparent py-8 border-b border-transparent"
+                isOpen 
+                    ? "bg-transparent border-transparent" // When menu open, transparent to show dark overlay
+                    : (scrolled || pathname !== '/' 
+                        ? "bg-white/80 backdrop-blur-md py-4 shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-b border-white/20" 
+                        : "bg-transparent py-8 border-b border-transparent")
             )}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -60,11 +62,14 @@ export default function Header() {
                     <div className="flex flex-col leading-none">
                         <span className={cn(
                             "text-xl md:text-2xl font-cinzel font-bold tracking-[0.1em] transition-colors duration-300",
-                            "text-slate-900"
+                            isOpen ? "text-white" : "text-slate-900" // White when menu open
                         )}>
                             O2plusNO
                         </span>
-                        <span className="text-[9px] tracking-[0.3em] text-slate-500 font-sans uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 -mt-1">
+                        <span className={cn(
+                            "text-[9px] tracking-[0.3em] font-sans uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 -mt-1",
+                            isOpen ? "text-slate-400" : "text-slate-500"
+                        )}>
                             Beyond Limits
                         </span>
                     </div>
@@ -112,7 +117,10 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden relative z-50 p-2 text-slate-900 hover:text-cyan-600 transition-colors"
+                    className={cn(
+                        "md:hidden relative z-50 p-2 transition-colors",
+                        isOpen ? "text-white" : "text-slate-900 hover:text-cyan-600" // White when menu open
+                    )}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
@@ -122,32 +130,34 @@ export default function Header() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                        className="fixed inset-0 bg-white/95 backdrop-blur-xl z-[9999] flex flex-col pt-32 px-8 md:hidden shadow-2xl"
+                        initial={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
+                        animate={{ opacity: 1, clipPath: "circle(150% at 100% 0)" }}
+                        exit={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        className="fixed inset-0 bg-slate-900 z-[9999] flex flex-col justify-center px-8 md:hidden"
                     >
-                        <div className="flex flex-col space-y-6">
+                        {/* Redundant close button removed - header button controls this */}
+
+                        <div className="flex flex-col space-y-8">
                             {navItems.map((item, index) => (
                                 <motion.div
                                     key={item.path}
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: 0.1 + index * 0.1 }}
+                                    transition={{ delay: 0.2 + index * 0.1 }}
                                 >
                                     <Link
                                         href={item.path}
                                         onClick={() => setIsOpen(false)}
-                                        className="group flex items-center justify-between py-4 border-b border-slate-100"
+                                        className="group flex items-baseline justify-between border-b border-slate-800 pb-4"
                                     >
                                         <span className={cn(
-                                            "text-2xl font-cinzel font-bold tracking-wider",
-                                            pathname === item.path ? "text-cyan-600" : "text-slate-800"
+                                            "text-3xl font-cinzel font-bold tracking-wider transition-colors",
+                                            pathname === item.path ? "text-cyan-500" : "text-white group-hover:text-cyan-500"
                                         )}>
                                             {item.name}
                                         </span>
-                                        <span className="text-xs text-slate-400 font-sans tracking-widest group-hover:text-cyan-500 transition-colors">
+                                        <span className="text-xs text-slate-500 font-sans tracking-widest group-hover:text-cyan-500 transition-colors">
                                             {item.label}
                                         </span>
                                     </Link>
@@ -157,13 +167,13 @@ export default function Header() {
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
-                                transition={{ delay: 0.4 }}
+                                transition={{ delay: 0.6 }}
                                 className="pt-8"
                             >
                                 <Link
                                     href="/contact#form-start"
                                     onClick={() => setIsOpen(false)}
-                                    className="block w-full text-center py-4 bg-slate-900 text-white font-cinzel tracking-widest text-sm hover:bg-cyan-700 transition-colors rounded-sm shadow-lg"
+                                    className="block w-full text-center py-4 border border-cyan-600 text-cyan-500 font-cinzel tracking-[0.2em] text-sm hover:bg-cyan-600 hover:text-white transition-all rounded-sm"
                                 >
                                     CONTACT
                                 </Link>
