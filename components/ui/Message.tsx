@@ -94,7 +94,7 @@ export default function Message() {
                         <div className="mt-12 md:mt-16 pt-8 border-t border-slate-200 flex items-center justify-between">
                             <div>
                                 <p className="font-cinzel text-[10px] text-slate-400 mb-1 uppercase tracking-widest font-bold">AUTH_SIGNATURE / 代表</p>
-                                <p className="text-xl md:text-2xl font-bold tracking-widest font-cinzel text-slate-900">Kengo Oono</p>
+                                <p className="text-xl md:text-2xl font-bold tracking-widest font-serif text-slate-900">Kengo Oono</p>
                             </div>
                             
                         </div>
