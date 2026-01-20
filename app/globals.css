@@ -6,11 +6,11 @@
   --font-cormorant: var(--font-cormorant), serif;
   --font-cinzel: var(--font-cinzel), serif;
 
-  --color-primary: #2563eb;
+  --color-primary: #0ea5e9;
   --color-primary-foreground: #ffffff;
 
   --color-background: #ffffff;
-  --color-foreground: #1e3a5f;
+  --color-foreground: #0f172a;
 }
 
 @layer utilities {
@@ -19,16 +19,16 @@
   }
 
   .text-gold {
-    @apply text-[#2563eb];
+    @apply text-[#0ea5e9]; /* Renamed concept, keeping class for compatibility but using blue */
   }
 
-  /* Glassmorphism Utilities */
+  /* Glassmorphism Utilities (Light Theme) */
   .glass {
-    @apply bg-blue-50/80 backdrop-blur-lg border border-blue-100;
+    @apply bg-slate-900/5 backdrop-blur-lg border border-slate-900/10;
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-blue-100 shadow-xl;
+    @apply bg-white/70 backdrop-blur-md border border-slate-200 shadow-xl;
   }
 }
 

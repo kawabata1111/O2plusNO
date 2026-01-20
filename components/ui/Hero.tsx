@@ -5,32 +5,16 @@ import Image from 'next/image';
 
 export default function Hero() {
     return (
-        <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-b from-blue-50 to-white">
-            {/* 0. Background Image with Overlay */}
-            <div className="absolute inset-0 z-0">
-                <Image
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
-                    alt="Background"
-                    fill
-                    className="object-cover opacity-20"
-                    priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 via-white/70 to-white" />
-            </div>
-
-            {/* 1. Aurora Background Effect */}
-            <div className="absolute inset-0 pointer-events-none z-0">
-                <div className="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-blue-200/40 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] bg-blue-300/30 rounded-full blur-[150px]" />
-            </div>
+        <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-transparent">
+            {/* Removed Background Image and Blobs for clear view of Particles */}
 
             {/* 2. Giant Typography Background */}
             <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none z-0">
                 <motion.div
                     initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 0.05, scale: 1 }}
+                    animate={{ opacity: 0.03, scale: 1 }}
                     transition={{ duration: 2, ease: "easeOut" }}
-                    className="text-[18vw] md:text-[13vw] font-bold text-[#1e3a5f] leading-none tracking-tighter whitespace-nowrap"
+                    className="text-[18vw] md:text-[13vw] font-cinzel font-bold text-slate-900 leading-none tracking-tighter whitespace-nowrap"
                 >
                     O2plusNO
                 </motion.div>
@@ -38,29 +22,29 @@ export default function Hero() {
 
             {/* 3. Main Content */}
             <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 h-full items-center">
-
-                {/* Left Side: Vertical Text (Japanese Aesthetics) */}
+                
+                {/* Left Side: Vertical Text */}
                 <div className="hidden lg:flex lg:col-span-2 h-full flex-col justify-center items-center relative">
-                    <motion.div
+                    <motion.div 
                         initial={{ height: 0 }}
                         animate={{ height: "40%" }}
                         transition={{ duration: 1.5, delay: 0.5, ease: "circOut" }}
-                        className="w-[1px] bg-[#1e3a5f]/20 absolute top-0"
+                        className="w-[1px] bg-gradient-to-b from-transparent via-slate-300 to-transparent absolute top-0"
                     />
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1 }}
-                        className="writing-vertical-rl text-[10px] tracking-[0.5em] text-[#1e3a5f]/40 py-8 border-l border-[#1e3a5f]/0 uppercase"
+                        className="writing-vertical-rl text-[10px] tracking-[0.5em] text-slate-500 py-8 border-l border-white/0 font-cinzel uppercase"
                         style={{ writingMode: 'vertical-rl' }}
                     >
                         Independence × Creation × Altruism
                     </motion.p>
-                     <motion.div
+                     <motion.div 
                         initial={{ height: 0 }}
                         animate={{ height: "40%" }}
                         transition={{ duration: 1.5, delay: 0.5, ease: "circOut" }}
-                        className="w-[1px] bg-[#1e3a5f]/20 absolute bottom-0"
+                        className="w-[1px] bg-gradient-to-b from-transparent via-slate-300 to-transparent absolute bottom-0"
                     />
                 </div>
 
@@ -72,17 +56,17 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="mb-6 lg:mb-8 inline-block"
                     >
-                        <span className="px-4 py-1 rounded-full border border-[#2563eb]/30 text-[#2563eb] text-[9px] md:text-[10px] tracking-[0.3em] uppercase bg-[#2563eb]/5 backdrop-blur-sm">
+                        <span className="px-5 py-1.5 rounded-full border border-blue-200 bg-blue-50/50 text-blue-600 text-[10px] md:text-[11px] tracking-[0.3em] uppercase backdrop-blur-sm font-cinzel font-semibold shadow-sm">
                             Be Your True Self
                         </span>
                     </motion.div>
 
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-medium leading-[1.2] lg:leading-tight text-[#1e3a5f] mb-8 tracking-wide">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-medium leading-[1.2] lg:leading-tight text-slate-800 mb-8 tracking-wide">
                         <motion.span
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            className="block font-cormorant italic"
+                            className="block font-cormorant italic text-slate-600"
                         >
                             Prove Your
                         </motion.span>
@@ -90,7 +74,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className="block mt-2 text-[#2563eb]"
+                            className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-400 font-cinzel drop-shadow-sm"
                         >
                             POTENTIAL
                         </motion.span>
@@ -98,7 +82,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.8 }}
-                            className="block mt-6 text-2xl md:text-3xl lg:text-4xl font-sans font-bold tracking-widest text-[#1e3a5f]/90"
+                            className="block mt-6 text-2xl md:text-3xl lg:text-4xl font-sans font-bold tracking-widest text-slate-700"
                         >
                             可能性を、証明する。
                         </motion.span>
@@ -108,7 +92,7 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        className="text-[#1e3a5f]/70 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
+                        className="text-slate-600 text-xs md:text-sm lg:text-base max-w-xs md:max-w-lg mx-auto lg:mx-0 leading-loose font-light tracking-wide"
                     >
                         自立した個人が互いに支え合い、<br className="hidden md:block"/>
                         その力を社会への貢献へと繋げていく。<br className="hidden md:block"/>
@@ -124,12 +108,12 @@ export default function Hero() {
                         transition={{ delay: 1.5, duration: 1 }}
                         className="flex flex-col items-center gap-4"
                     >
-                        <span className="text-[10px] text-[#1e3a5f]/50 tracking-[0.3em] uppercase writing-vertical-rl">Scroll</span>
-                        <div className="w-[1px] h-24 bg-gradient-to-b from-[#1e3a5f]/0 via-[#1e3a5f]/40 to-[#1e3a5f]/0" />
+                        <span className="text-[10px] text-slate-400 tracking-[0.3em] uppercase writing-vertical-rl font-cinzel">Scroll</span>
+                        <div className="w-[1px] h-24 bg-gradient-to-b from-slate-200/0 via-slate-400 to-slate-200/0" />
                     </motion.div>
                 </div>
             </div>
-
+            
              {/* Mobile Scroll Indicator */}
             <motion.div
                 initial={{ opacity: 0 }}
@@ -137,7 +121,7 @@ export default function Hero() {
                 transition={{ delay: 1.2, duration: 1 }}
                 className="lg:hidden absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
             >
-                <div className="w-[1px] h-12 bg-gradient-to-b from-[#1e3a5f]/60 to-transparent" />
+                <div className="w-[1px] h-12 bg-gradient-to-b from-slate-400 to-transparent" />
             </motion.div>
         </section>
     );
