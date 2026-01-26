@@ -69,8 +69,8 @@ export default function CompanyPage() {
                         
                         {/* Map Container with Tech Overlay */}
                         <div className="w-full h-[400px] bg-slate-100 relative overflow-hidden group border border-slate-200">
-                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.4728562725345!2d139.57861137635293!3d35.78873757255276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee46e6a6a625%3A0x6a6a6a6a6a6a6a6a!2zMzUxLTAwMTQg5Z-c546J55yM5pyd6Zye5biC6Iid5oqY55S677yR4oiS77yR4oiS77yV77yT!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" 
+                             <iframe
+                                src="https://www.google.com/maps?q=埼玉県朝霞市膝折町1-1-53&output=embed&z=17" 
                                 width="100%" 
                                 height="100%" 
                                 style={{border:0, filter: 'grayscale(100%) contrast(1.2) opacity(0.8)'}} 
