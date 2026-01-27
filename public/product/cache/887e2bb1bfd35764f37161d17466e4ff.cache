@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>LINE登録ありがとうございます</title>
+	<meta name="keywords" content="副業,兼業,輸出物販,お小遣い,大野研吾"/>
+	<meta name="description" content="プロが解説！！なぜ副業で稼ぐなら“輸出物販”なのか？リモート時代の副業-手堅く稼ぐなら輸出物販で決まり！-"/>
+
+	<link rel="stylesheet" type="text/css" media="all" href="../css/config.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/pc.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/sp.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/tb.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/ori_animation.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,600,700|Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/favicon.ico"/><link rel="apple-touch-icon-precomposed" href="../img/apple_touch_icon.png"/>
+
+</head>
+
+<body id="top">
+<div class="wrap">
+
+
+<!--BENEFIT-->
+<div id="benefit">
+
+    <!--KV-->
+    <div class="benefit_kv">
+        <div class="cts">
+            <div class="copy inviewfadeInUp"><img src="img/mv_copy.png" alt="まずは超豪華2大特典をお受け取りください"></div>
+        </div><!--cts-->
+    </div><!--benefit_kv-->
+
+    
+    
+    <!--STEP1-->
+    <div class="step1">
+        <div class="intro">
+            <div class="intro_cts">
+                <h2>受け取り方は<span class="fy">簡単2ステップ</span></h2>
+            </div><!--intro_cts-->
+        </div><!--intro-->
+        
+        <div class="cts">
+            <div class="titles">
+                <div class="crown inviewfadeInUp"><img src="img/crown.svg" alt=""></div>
+                <p class="number inviewfadeInUp">STEP 1</p>
+                <h2 class="inviewfadeInUp"><span class="fr">お小遣い案件3万円分を<br class="sp">GET</span>しよう!</h2>
+            </div><!--titles-->
+
+            <div class="photo inviewfadeInUp"><img src="img/step1_main.jpg" alt=""></div>
+            
+            <p class="copy">こちらの<span class="b fg">専用LINEに登録</span>して<br><span class="b fr">お小遣いをGET</span>してください!</p>
+            
+            <div class="btn"><a href="https://lin.ee/F5O4xLs" target="_blank"><img src="../img/cta.png" alt="友だち追加はこちらから"></a></div>
+        
+        </div><!--cts-->
+    </div><!--step1-->
+    
+    
+    
+    <!--STEP2-->
+    <div class="step2">
+        <div class="intro">
+            <div class="intro_cts">
+                <div class="wait"><p>※まだページは閉じないでください！！</p></div>
+                <h2><span class="fy">初回登録時限定</span>の超豪華特典! </h2>
+                <p class="ex">輸出物販のノウハウを<span class="b">直接マンツーマンでレッスンする個別相談会</span>に<br class="pc">今だけなんと<span class="b fy fl">先着15名様無料</span>でご案内！</p>
+            </div><!--intro_cts-->
+        </div><!--intro-->
+        
+        <div class="cts">
+            <div class="titles">
+                <div class="crown inviewfadeInUp"><img src="img/crown.svg" alt=""></div>
+                <p class="number inviewfadeInUp">STEP 2</p>
+                <h2 class="inviewfadeInUp"><span class="fr">今だけ無料の個別相談会</span>に<br class="sp">参加して<br class="pc">輸出物販のノウハウを<br class="sp">手に入れよう!</h2>
+            </div><!--titles-->
+
+            <div class="photo inviewfadeInUp"><img src="img/step2_main.jpg" alt=""></div>
+            
+            <div class="btn"><a href="#contact"><p>今すぐ無料で申し込む</p><div class="arrow"></div></a></div>
+            
+            <p class="copy">この個別相談会では、<br class="pc">私大野が<span class="b">直接マンツーマンで輸出物販のノウハウをお伝え</span>します。<br>Zoomでのオンライン相談か直接お会いする対面相談、<br class="pc"><span class="b fr">先着15名様限定</span>でご案内させていただきます!</p>
+            
+            
+            <div class="subtitles inviewfadeInRight">
+                <div class="line"></div>
+                <p class="subtitle">個別相談会で学べる内容</p>
+            </div><!--subtitles-->
+            
+            <div class="details">
+            
+                <!--DETAIL 1-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">1</p>
+                    <h3 class="inviewfadeInUp">なぜ副業で始めるなら<br class="sp">輸出物販がよいか？</h3>
+                    <div class="line"></div>
+                    <p class="ex">副業といっても様々なものがありますが、その中でも<span class="b">最も稼ぎやすい、早く大きく結果に結びつきやすいのが『輸出物販』</span>です。まずは<span class="b fp">「なぜ輸出物販が稼げるのか」</span>を理解して、効率的なスタートをきりましょう。</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 2-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">2</p>
+                    <h3 class="inviewfadeInUp">国内物販の<br class="sp">メリット、デメリット</h3>
+                    <div class="line"></div>
+                    <p class="ex">国内物販は<span class="b">気軽に始められるというメリット</span>がありますが、本当に稼げるでしょうか？<br>ここでは<span class="b fp">国内物販の特徴</span>を詳しくお伝えします。</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 3-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">3</p>
+                    <h3 class="inviewfadeInUp">輸出物販の<br class="sp">メリット、デメリット</h3>
+                    <div class="line"></div>
+                    <p class="ex">輸出物販がなぜ稼げるのか、国内物販の特徴をお伝えしたあとは、<span class="b">輸出物販のメリットとデメリット</span>についてお伝えします。<span class="b fr">デメリットについてもきちんとお伝え</span>し、さらに理解を深めていただきます。</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 4-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">4</p>
+                    <h3 class="inviewfadeInUp">輸出物販の将来性、<br class="sp">長期性、安定性に関して<br>（輸出物販は一生のスキルになる！？）</h3>
+                    <div class="line"></div>
+                    <p class="ex">せっかく副業を始めるなら<span class="b">一生稼ぎ続けられるもの</span>がいいですよね！<br>みなさんが気になる<span class="b fp">「輸出物販は一生もののスキルになるのか？」</span>という視点でお伝えしていきます。</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 5-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">5</p>
+                    <h3 class="inviewfadeInUp">どんな物を輸出するか？</h3>
+                    <div class="line"></div>
+                    <p class="ex">物販ビジネスの概要をお伝えしたあとは、具体的なノウハウについてお教えします。<br><span class="b">どういった物を輸出すれば効率的に利益をあげることができる</span>のか、<span class="b fp">実績あるデータをもとにご案内</span>させていただきます。</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 6-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">6</p>
+                    <h3 class="inviewfadeInUp">輸出物販の日々の作業</h3>
+                    <div class="line"></div>
+                    <p class="ex">実際に輸出物販を始めると、日々どんな作業があるのか気になりますよね？<br>ここでは<span class="b">日常的に何をすればいいのか</span>ということを具体的にお話しします。<br>また、<span class="b fp">より効率的に作業をこなすためのコツ</span>などについてもお伝えします。</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 7-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">7</p>
+                    <h3 class="inviewfadeInUp">月収20万〜30万を<br class="sp">稼ぐ為には？</h3>
+                    <div class="line"></div>
+                    <p class="ex">物品や作業の内容について具体的なお話をしたあとは、いよいよ実際に<span class="b fp">月収20万〜30万を稼ぐためのノウハウ</span>をお伝えします。<br>早ければ<span class="b">数ヶ月で達成</span>する方もいらっしゃいますので、楽しみにしていてください！</p>
+                </div><!--detail-->
+                
+                 <!--DETAIL 8-->
+                <div class="detail">
+                    <p class="number inviewfadeInUp">8</p>
+                    <h3 class="inviewfadeInUp">質疑応答・相談</h3>
+                    <div class="line"></div>
+                    <p class="ex">最後に<span class="b">あなたの疑問</span>にお答えします。<br>気になることは<span class="b fp">直接なんでもご相談</span>ください！</p>
+                </div><!--detail-->
+                
+            </div><!--details-->
+            
+            <div class="btn"><a href="#contact"><p>今すぐ無料で申し込む</p><div class="arrow"></div></a></div>
+            
+        </div><!--cts-->
+    </div><!--step2-->
+    
+    
+    
+    <!--MESSAGE-->
+    <div class="message">
+        <div class="intro">
+            <div class="intro_cts">
+                <h2>こんな方々が<br>個別相談会に参加されています</h2>
+            </div><!--intro_cts-->
+        </div><!--intro-->
+        
+        <div class="cts">
+            <div class="cases">
+
+                <!--MESSAGE1-->
+                <div class="case">
+                    <p class="number inviewfadeInRight">MESSAGE 1</p>
+                    <div class="comments">
+                        <div class="illust inviewfadeInUp"><img src="img/message_1.png" alt=""></div>
+                        <div class="comment">
+                            <div class="names">
+                                <p class="name"><span class="ini">Y.S</span><span class="b">さん</span><span class="job">（会社員）</span></p>
+                                <p class="sub">28歳　男性</p>
+                            </div><!--names-->
+                            <p class="ex">サポート体制や指導方法が充実しているため、指導に沿って地道に作業を続けることができれば、自ずと結果が出ます。<br>最初の２〜３ヶ月は利益が出づらい部分もありますが、そこを乗り越えればまったくの初心者であっても結果は出せました。<br>まずは講師の指導方法やアドバイスに素直に従い、日々コツコツと作業をすること。<br>個人的なアドバイスとしては、最初は利益を追わずに一日一品の出品および販売の好循環を作り出すことですね。<br>この流れができれば一点の利益額が大きくなくとも、月単位で見れば大きく利益が見込めます。</p>
+                        </div><!--comment-->
+                    </div><!--comments-->
+                    
+                    <p class="item">Y.Sさんの実績はこちら</p>
+                    <div class="evidences">
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_1a.jpg" class="image"><img src="img/evidence_1a.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_1b.jpg" class="image"><img src="img/evidence_1b.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_1c.jpg" class="image"><img src="img/evidence_1c.jpg" alt=""></a></div>
+                    </div><!--evidences-->
+                    <p class="attention"><span>※</span><span>クリックタップで拡大します。</span></p>
+                </div><!--case-->
+                
+                <!--MESSAGE2-->
+                <div class="case">
+                    <p class="number inviewfadeInRight">MESSAGE 2</p>
+                    <div class="comments">
+                        <div class="illust inviewfadeInUp"><img src="img/message_2.png" alt=""></div>
+                        <div class="comment">
+                            <div class="names">
+                                <p class="name"><span class="ini">M.A</span><span class="b">さん</span><span class="job">（個人事業主）</span></p>
+                                <p class="sub">34歳　女性</p>
+                            </div><!--names-->
+                            <p class="ex">私は輸出物販だけでなく、国内物販もほぼ未経験でした。<br>もちろん英語も読めません。<br>でもしっかりとしたマニュアルと相談できる体制があり、細かい行動の目標設定もしていただけたので、その目標を目指して行動することで結果につなげることができました。<br>成果を出すために必要なのは、輸出物販のための時間をしっかり確保し作業を続けること。<br>迷ったら遠慮なくすぐに相談すること。<br>機会を効果的に活用していくこと（講師の方や他の仲間と仲良くなり、相談しやすい、情報をとりやすい状況を自分で作るなど）。<br>物販は決まった行動をやり続ければ結果につながるので、とても固い収入源になります。<br>行動すれば結果がでる環境を用意してくださっているので、一緒に頑張りましょう！！</p>
+                        </div><!--comment-->
+                    </div><!--comments-->
+                    
+                    <p class="item">M.Aさんの実績はこちら</p>
+                    <div class="evidences">
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_2a.jpg" class="image"><img src="img/evidence_2a.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_2b.jpg" class="image"><img src="img/evidence_2b.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_2c.jpg" class="image"><img src="img/evidence_2c.jpg" alt=""></a></div>
+                    </div><!--evidences-->
+                    <p class="attention"><span>※</span><span>クリックタップで拡大します。</span></p>
+                </div><!--case-->
+                
+                <!--MESSAGE3-->
+                <div class="case">
+                    <p class="number inviewfadeInRight">MESSAGE 3</p>
+                    <div class="comments">
+                        <div class="illust inviewfadeInUp"><img src="img/message_3.png" alt=""></div>
+                        <div class="comment">
+                            <div class="names">
+                                <p class="name"><span class="ini">I.K</span><span class="b">さん</span><span class="job">（個人事業主）</span></p>
+                                <p class="sub">27歳　男性</p>
+                            </div><!--names-->
+                            <p class="ex">自分はもともと国内物販を2年前くらいからやっていて、海外輸出は初めてではあったものの、物販自体の勝手を知っていたので、他の皆さんよりもハンデがあるかもしれません。<br>ただ、結果が出たのは、ハンデだけではなく、結果を出すための思考や行動が伴っていたからではないかと思っています。<br>輸出物販に限らず、ビジネスで成功する人の特徴は共通しています。<br>自分が思う結果を出す人の特徴は、①行動がはやい　②とにかく行動してたくさん失敗する　③たくさん質問する　④優先順位が明確　⑤目標や夢を掲げている　だと思います。<br>これらの特徴を備えた人は輸出物販やそのほかのビジネスでも間違いなく結果を出せると思います。<br>まだこれらを満たせていない方は是非意識して取り組んでみてください。</p>
+                        </div><!--comment-->
+                    </div><!--comments-->
+                    
+                    <p class="item">I.Kさんの実績はこちら</p>
+                    <div class="evidences">
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_3a.jpg" class="image"><img src="img/evidence_3a.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_3b.jpg" class="image"><img src="img/evidence_3b.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_3c.jpg" class="image"><img src="img/evidence_3c.jpg" alt=""></a></div>
+                    </div><!--evidences-->
+                    <p class="attention"><span>※</span><span>クリックタップで拡大します。</span></p>
+                </div><!--case-->
+                
+                <!--MESSAGE4-->
+                <div class="case">
+                    <p class="number inviewfadeInRight">MESSAGE 4</p>
+                    <div class="comments">
+                        <div class="illust inviewfadeInUp"><img src="img/message_4.png" alt=""></div>
+                        <div class="comment">
+                            <div class="names">
+                                <p class="name"><span class="ini">K.S</span><span class="b">さん</span><span class="job">（会社員）</span></p>
+                                <p class="sub">33歳　男性</p>
+                            </div><!--names-->
+                            <p class="ex">実績のある講師がサポートしてくださるので的確な回答をもらえます。<br>また、コミュニティの仲間同士の交流も多いので少し先を進んでいる先輩や同期の方と情報交換し切磋琢磨できることで、モチベーションも維持し続けられていることが大きいと感じます。<br>それと何をするにも受動的だと成果は出ないと思います。<br>能動的、積極的にzoom・勉強会に参加していくことが重要かと思います。<br>講師の方や周りの仲間との交流（情報交換）も大事です。<br>あとは愚直にコツコツ作業するのみです。</p>
+                        </div><!--comment-->
+                    </div><!--comments-->
+                    
+                    <p class="item">K.Sさんの実績はこちら</p>
+                    <div class="evidences">
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_4a.jpg" class="image"><img src="img/evidence_4a.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_4b.jpg" class="image"><img src="img/evidence_4b.jpg" alt=""></a></div>
+                        <div class="evidence inviewfadeInUp"><a href="img/evidence_4c.jpg" class="image"><img src="img/evidence_4c.jpg" alt=""></a></div>
+                    </div><!--evidences-->
+                    <p class="attention"><span>※</span><span>クリックタップで拡大します。</span></p>
+                </div><!--case-->
+                
+            </div><!--cases-->
+            
+            <p class="summary inviewfadeInUp">他にもたくさんの方々が<br><span class="fr">個別相談会に参加したことをきっかけ</span>に<br>成果を出しています！</p>
+        </div><!--cts-->
+        
+        <div class="message_bg inviewfadeIn"><img src="img/message_bg.jpg" alt=""></div>
+    </div><!--message-->
+
+
+    
+    <!--CONTACT-->
+    <div id="contact">
+        <div class="cts">
+            <div class="titles">
+                <div class="icon inviewfadeInUp"><img src="img/icon_flow.svg" alt=""></div>
+                <h2 class="inviewfadeInUp"><span class="fr">お申し込み</span>の流れ</h2>
+            </div><!--titles-->
+
+            <div class="flows">
+                <div class="flow">
+                    <div class="illust inviewfadeInUp"><img src="img/flow_a.png" alt=""></div>
+                    <p class="ex">下記フォームから<br><span class="b">ご希望の日程をお選び</span>ください</p>
+                </div><!--flow-->
+                                
+                <div class="flow">
+                    <div class="illust inviewfadeInUp"><img src="img/flow_b.png" alt=""></div>
+                    <p class="ex"><span class="b">必要事項を記入</span>し<br>お申し込みください</p>
+                </div><!--flow-->
+                                
+                <div class="flow">
+                    <div class="illust inviewfadeInUp"><img src="img/flow_c.png" alt=""></div>
+                    <p class="ex"><span class="b">こちらからご連絡</span>を<br>させていただきます</p>
+                </div><!--flow-->
+            </div><!--flows-->
+
+            
+            <!--FORM-->
+            <div id="app">
+                <div class="app_cts">
+                    <div class="titles">
+                        <p class="limited inviewfadeInUp">先着15名様限定！</p>
+                        <h2 class="inviewfadeInUp">今だけ<span class="fr">無料個別相談会！</span></h2>
+                        <p class="copy">お好きな日程を選択し<br class="sp">必要事項をご記入ください</p>
+                    </div><!--titles-->
+                    
+                    <!--FORM-->
+                    <form action="<?php echo $next_url; ?>" method="post">
+                        <div class="forms">
+                            <div class="form">
+                                <div class="items"><p class="required">必須</p><p class="item">ご希望の日程</p></div><!--items-->
+                                <div class="details">
+                                    <p>
+                                        <select name="nittei" class="style_date">
+                                            <option value="">ご希望の日程を選択</option>
+                                            <?php for($i=0; $i<count($datas->nittei->select_vals); $i++): ?>
+                                            <option value="<?php echo $datas->nittei->select_vals[$i]; ?>" <?php echo $datas->nittei->select_selected[$i]; ?>><?php echo $datas->nittei->select_vals[$i]; ?></option>
+                                            <?php endfor; ?>
+                                        </select>
+                                    </p>
+                                    <span class="warning"></span>
+                                </div><!--details-->
+                            </div><!--form-->
+                            
+                            <div class="form">
+                                <div class="items"><p class="required">必須</p><p class="item">お名前</p></div><!--items-->
+                                <div class="details">
+                                    <p><input type="text" name="name" class="style_name" placeholder="お名前を入力" value="<?php echo $datas->name->value; ?>"></p>
+                                    <span class="warning"></span>
+                                </div><!--details-->
+                            </div><!--form-->
+                            
+                            <div class="form">
+                                <div class="items"><p class="required">必須</p><p class="item">フリガナ</p></div><!--items-->
+                                <div class="details">
+                                    <p><input type="text" name="furigana" class="style_kana" placeholder="フリガナを入力" value="<?php echo $datas->furigana->value; ?>"></p>
+                                    <span class="warning"></span>
+                                </div><!--details-->
+                            </div><!--form-->
+                            
+                            <div class="form">
+                                <div class="items"><p class="required">必須</p><p class="item">E-mail</p></div><!--items-->
+                                <div class="details">
+                                    <p><input type="email" name="email" class="style_mail" placeholder="メールアドレスを入力" value="<?php echo $datas->email->value; ?>"></p>
+                                    <span class="warning"></span>
+                                </div><!--details-->
+                            </div><!--form-->
+                            
+                            <div class="form">
+                                <div class="items"><p class="required">必須</p><p class="item">お電話番号</p></div><!--items-->
+                                <div class="details">
+                                    <p><input type="tel" name="tel" class="style_tel" placeholder="お電話番号を入力" value="<?php echo $datas->tel->value; ?>"></p>
+                                    <span class="warning"></span>
+                                </div><!--details-->
+                            </div><!--form-->
+                            
+                            <div class="form">
+                                <div class="items"><p class="any">任意</p><p class="item">備考欄</p></div><!--items-->
+                                <div class="details">
+                                    <p><textarea name="comment" class="style_etc" placeholder="ご要望等がありましたらご入力ください"><?php echo $datas->comment->value; ?></textarea></p>
+                                    <span class="warning"></span>
+                                </div><!--details-->
+                            </div><!--form-->
+                            
+                            <div class="btns">
+                                <input type="submit" name="" class="style_submit" value="確認する">
+                            </div><!--btns-->
+                            
+                        </div><!--forms-->
+                    </form>
+                    
+                </div><!--app_cts-->
+            </div><!--app-->
+
+        </div><!--cts-->
+    </div><!--contact-->
+    
+    
+    
+    <!--PROFILE-->
+    <div class="profile">
+        <div class="cts">
+            <div class="titles">
+                <div class="icon inviewfadeInUp"><img src="img/icon_profile.svg" alt=""></div>
+                <h2 class="inviewfadeInUp">プロフィール</h2>
+            </div><!--titles-->
+            
+            <div class="biography1">
+                <div class="photo inviewfadeInLeft"><img src="img/profile.jpg" alt=""></div>
+                <div class="detail">
+                    <div class="names inviewfadeInLeft">
+                        <h3 class="inviewfadeInUp">大野 研吾</h3>
+                        <p class="type inviewfadeInUp">輸出物販＆副業コンサル会社経営</p>
+                        <div class="sign inviewfadeInDown"><img src="img/profile_sign.svg" alt=""></div>
+                    </div><!--names-->
+                    <div class="ex">
+                        <p>実力も実績もなにもないところからビジネス始めて経験を積み、今では<span class="b">口コミのみで全国から480名以上の生徒が集まる</span>人気講師。</p>
+                        <p>大学卒業後、新卒でシステムエンジニア(SE)の会社に勤め、SEをやりながら副業でニュースキン(MLM)を開始するが200万のマイナスを出してしまう。</p>
+                        <p>その後27歳 のときに会社を辞めて独立し、他のMLMや営業代行などにチャレンジするがすべて結果が出ずに失敗。<br>何をやっても上手くいかず、1年間で貯金400万を全て使い果たし、資産が0円に。<br>借金をして金融ブラックになり、住んでいた家を追い出される。</p>
+                        <p>藁にもすがる思いで28歳のときに最後のビジネスとしてアフィリエイトを開始。このアフィリエイトで初めてビジネスとして結果を出すことに成功。</p>
+                    </div><!--ex-->
+                </div><!--detail-->
+            </div><!--biography1-->
+            
+            <div class="biography2">
+                <div class="ex">
+                    <p>最初の2ヶ月は毎日10時間ほどアフィリエイトの作業をして、<br>3ヶ月目に売上約35万、利益で約20万獲得。<br>4ヶ月目に売上約100万、利益で約60万獲得。</p>
+                    <p>そして30歳のときにその経験を活かしてアフィリエイトの副業コンサルを開始。<br><span class="b">初めてのコンサルで生徒80名を達成。</span></p>
+                    <p>その後アフィリエイトだけではなく国内物販の副業コンサルや輸出物販の副業コンサルも開始する。</p>
+                    <p>口コミのみで集まった<span class="b">全国480名の生徒に副業を教えてきた</span>実力の持ち主。</p>
+                </div><!--ex-->
+                <div class="photos">
+                    <div class="photo inviewfadeInRight"><img src="img/profile_a.jpg" alt=""></div>
+                    <div class="photo inviewfadeInRight"><img src="img/profile_b.jpg" alt=""></div>
+                </div><!--photos-->
+            </div><!--biography2-->
+
+        </div><!--cts-->
+    </div><!--profile-->
+
+
+</div><!--benefit-->
+
+
+
+<!--BACK TO TOP-->
+<div class="BackToTop"><a href="#top"><img src="../img/BackToTop.png" alt=""></a></div>
+
+
+<!--FOOTER-->
+<footer>
+    <p class="link"><a href="../row.html">特定商取引法に基づく表記</a>　|　<a href="../pp.html">プライバシーポリシー</a></p>
+    <p class="copyright">Copyright&copy;<script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>. Export Product Sales. <br class="sp">All Rights Reserved.</p>
+</footer>
+
+
+<!--JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="../js/default.js"></script>
+<script src="../js/jquery.inview.js">
+</script><script src="../js/inview_trigger.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+
+<!--LibForm JS-->
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/additional-methods.min.js"></script>
+<script src="?p=v"></script>
+
+
+<script>
+$(".image").modaal({
+type:'image',
+});
+</script>
+
+</div><!--wrap-->
+</body>
+</html>

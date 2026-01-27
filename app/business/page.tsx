@@ -46,7 +46,7 @@ const businesses = [
         enTitle: "Consulting (Free)",
         jpTitle: "在宅ワークコンサル事業",
         image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2070&auto=format&fit=crop",
-        link: "https://o2plusno.com/product/",
+        link: "/product/",
         description: (
             <>
                 <p className="mb-8 font-light leading-relaxed text-slate-700">

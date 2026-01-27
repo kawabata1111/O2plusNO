@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>LINE登録ありがとうございます</title>
+	<meta name="keywords" content="副業,兼業,輸出物販,お小遣い,大野研吾"/>
+	<meta name="description" content="プロが解説！！なぜ副業で稼ぐなら“輸出物販”なのか？リモート時代の副業-手堅く稼ぐなら輸出物販で決まり！-"/>
+
+	<link rel="stylesheet" type="text/css" media="all" href="../css/config.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/pc.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/sp.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/tb.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/ori_animation.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,600,700|Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/favicon.ico"/><link rel="apple-touch-icon-precomposed" href="../img/apple_touch_icon.png"/>
+
+</head>
+
+<body id="top">
+<div class="wrap">
+
+<!--HEADER-->
+<header></header>
+
+
+<!--BENEFIT-->
+<div id="benefit">
+
+    <!--CONTACT-->
+    <div id="contact">
+        <div class="cts">
+
+            <!--FORM-->
+            <div id="app">
+                <div class="app_cts">
+                    <div class="titles">
+                        <p class="finish"><span class="fr">送信が完了</span>しました<br></p>
+                    </div><!--titles-->
+                    
+                    <p class="finish_copy">お申し込みが完了しました。<br>ご入力内容の<span class="b">確認メール</span>をお送りしました。<br>再度、ご入力内容の確認をお願いいたします。<br></p>
+                    <p class="attention"><span>※</span><span>こちらのメールは、当日まで保管をお願いいたします。</span></p>
+                    
+                    <div class="back_btn">
+                        <a href="../">ホームへ戻る</a>
+                    </div><!--btns-->
+                    
+                </div><!--app_cts-->
+            </div><!--app-->
+
+        </div><!--cts-->
+    </div><!--contact-->
+
+
+
+
+
+</div><!--benefit-->
+
+
+
+
+
+
+
+
+
+<!--BACK TO TOP-->
+<div class="BackToTop"><a href="#top"><img src="img/BackToTop.png" alt=""></a></div>
+
+
+<!--FOOTER-->
+<footer>
+    <p class="link"><a href="row.html">特定商取引法に基づく表記</a>　|　<a href="pp.html">プライバシーポリシー</a></p>
+    <p class="copyright">Copyright&copy;<script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>. Export Product Sales. <br class="sp">All Rights Reserved.</p>
+</footer>
+
+
+<!--JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="../js/default.js"></script>
+<script src="../js/jquery.inview.js">
+</script><script src="../js/inview_trigger.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+
+<script>
+$(function(){
+    var scrollpos;
+    $('.nav_btn').on('click', function(){
+        scrollpos = $(window).scrollTop();
+        $('body').addClass('fixed').css({'top': -scrollpos});
+        $('.grobal_nav').slideToggle(300,'swing');
+		$('.nav_close').slideToggle('fast');
+    });
+    $('.nav_close').on('click', function(){
+        $('body').removeClass('fixed').css({'top': 0});
+        window.scrollTo( 0 , scrollpos );
+        $('.grobal_nav').slideToggle(300,'swing');
+		$('.nav_close').toggle('fast');
+    });
+});
+</script>
+
+<script>
+$(".image").modaal({
+type:'image',
+});
+</script>
+
+</div><!--wrap-->
+</body>
+</html>
