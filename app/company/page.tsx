@@ -70,7 +70,7 @@ export default function CompanyPage() {
                         {/* Map Container with Tech Overlay */}
                         <div className="w-full h-[400px] bg-slate-100 relative overflow-hidden group border border-slate-200">
                              <iframe
-                                src="https://maps.google.com/maps?q=35.8066576,139.7010145&output=embed&z=17"
+                                src="https://maps.google.com/maps?q=35.806654,139.719466&output=embed&z=17"
                                 width="100%" 
                                 height="100%" 
                                 style={{border:0, filter: 'grayscale(100%) contrast(1.2) opacity(0.8)'}} 
