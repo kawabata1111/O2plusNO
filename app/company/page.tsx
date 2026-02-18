@@ -36,7 +36,7 @@ export default function CompanyPage() {
                                 { dt: '代表者', dd: '大野 研吾' },
                                 { dt: '設立', dd: '2017年10月11日' },
                                 { dt: '資本金', dd: '200万円 (2026年1月6日現在)' },
-                                { dt: '所在地', dd: '〒351-0014 埼玉県朝霞市膝折町1-1-53' },
+                                { dt: '所在地', dd: '〒332-0016 埼玉県川口市幸町2-7-26 シミズビル C-59' },
                                 { dt: '連絡先', dd: 'TEL: 050-5527-6238 / Email: o2plusno20171011@gmail.com' },
                                 { dt: '従業員数', dd: '0名 (業務委託者数 25名) ※2026年1月6日現在' },
                                 { dt: '事業内容', dd: '輸出物販事業、各種コンサルティング業務、営業代行事業' },
@@ -66,11 +66,11 @@ export default function CompanyPage() {
                         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                             <h2 className="text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap font-cinzel text-slate-900">ACCESS / <span className="text-cyan-600 font-sans">アクセス</span></h2>
                         </div>
-                        
+
                         {/* Map Container with Tech Overlay */}
                         <div className="w-full h-[400px] bg-slate-100 relative overflow-hidden group border border-slate-200">
                              <iframe
-                                src="https://www.google.com/maps?q=埼玉県朝霞市膝折町1-1-53&output=embed&z=17" 
+                                src="https://maps.google.com/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E5%B9%B8%E7%94%BA2-7-26+%E3%82%B7%E3%83%9F%E3%82%BA%E3%83%93%E3%83%AB&output=embed&z=16"
                                 width="100%" 
                                 height="100%" 
                                 style={{border:0, filter: 'grayscale(100%) contrast(1.2) opacity(0.8)'}} 
@@ -90,7 +90,7 @@ export default function CompanyPage() {
                             </div>
                         </div>
                          <p className="mt-6 text-sm font-cinzel text-slate-500 border-l-2 border-cyan-500 pl-4">
-                            〒351-0014 埼玉県朝霞市膝折町1-1-53
+                            〒332-0016 埼玉県川口市幸町2-7-26 シミズビル C-59
                         </p>
                     </motion.div>
                 </div>

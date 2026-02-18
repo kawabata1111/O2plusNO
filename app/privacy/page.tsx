@@ -105,7 +105,7 @@ export default function PrivacyPage() {
                                 </h3>
                                 <p className="text-sm text-slate-600 leading-loose font-sans">
                                     本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。<br/><br/>
-                                    住所：〒351-0014 埼玉県朝霞市膝折町1-1-53<br/>
+                                    住所：〒332-0016 埼玉県川口市幸町2-7-26 シミズビル C-59<br/>
                                     社名：合同会社O2plusNO<br/>
                                     代表者：大野 研吾<br/>
                                     Eメールアドレス：o2plusno20171011@gmail.com

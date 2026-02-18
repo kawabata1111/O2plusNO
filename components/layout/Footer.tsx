@@ -34,8 +34,8 @@ export default function Footer() {
 
                             <dt className="font-medium text-slate-500 sm:border-r sm:border-slate-700 sm:pr-4">所在地</dt>
                             <dd>
-                                〒351-0014<br/>
-                                埼玉県朝霞市膝折町1-1-53
+                                〒332-0016<br/>
+                                埼玉県川口市幸町2-7-26 シミズビル C-59
                             </dd>
 
                             <dt className="font-medium text-slate-500 sm:border-r sm:border-slate-700 sm:pr-4">連絡先</dt>
