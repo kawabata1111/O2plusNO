@@ -36,8 +36,8 @@ export default function CompanyPage() {
                                 { dt: '代表者', dd: '大野 研吾' },
                                 { dt: '設立', dd: '2017年10月11日' },
                                 { dt: '資本金', dd: '200万円 (2026年1月6日現在)' },
-                                { dt: '所在地', dd: '〒332-0016 埼玉県川口市幸町2-7-26 シミズビル C-59' },
-                                { dt: '連絡先', dd: 'TEL: 050-5527-6238 / Email: o2plusno20171011@gmail.com' },
+                                { dt: '所在地', dd: '〒351-0014 埼玉県朝霞市膝折町1-1-53' },
+                                { dt: '連絡先', dd: 'TEL: 050-5527-6238 / Email: info@o2plusno2017.com' },
                                 { dt: '従業員数', dd: '0名 (業務委託者数 25名) ※2026年1月6日現在' },
                                 { dt: '事業内容', dd: '輸出物販事業、各種コンサルティング業務、営業代行事業' },
                                 { dt: '主要取引銀行', dd: 'みずほ銀行' },
@@ -70,7 +70,7 @@ export default function CompanyPage() {
                         {/* Map Container with Tech Overlay */}
                         <div className="w-full h-[400px] bg-slate-100 relative overflow-hidden group border border-slate-200">
                              <iframe
-                                src="https://maps.google.com/maps?q=35.806654,139.719466&output=embed&z=17"
+                                src="https://maps.google.com/maps?q=35.7953,139.5936&output=embed&z=17"
                                 width="100%" 
                                 height="100%" 
                                 style={{border:0, filter: 'grayscale(100%) contrast(1.2) opacity(0.8)'}} 
@@ -90,7 +90,7 @@ export default function CompanyPage() {
                             </div>
                         </div>
                          <p className="mt-6 text-sm font-cinzel text-slate-500 border-l-2 border-cyan-500 pl-4">
-                            〒332-0016 埼玉県川口市幸町2-7-26 シミズビル C-59
+                            〒351-0014 埼玉県朝霞市膝折町1-1-53
                         </p>
                     </motion.div>
                 </div>

@@ -60,7 +60,7 @@ export default function ContactPage() {
                                         <Mail size={18} />
                                         <span className="text-[10px] font-cinzel tracking-widest font-bold">DATA_PACKET / メール</span>
                                     </div>
-                                    <p className="text-sm sm:text-base md:text-xl font-bold tracking-wider font-mono text-slate-900 break-all">o2plusno20171011@gmail.com</p>
+                                    <p className="text-sm sm:text-base md:text-xl font-bold tracking-wider font-mono text-slate-900 break-all">info@o2plusno2017.com</p>
                                     <p className="text-[10px] text-slate-400 mt-2 font-cinzel">AVAILABILITY: 24/7 AUTO_RECEIVE</p>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                             <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-cyan-500" />
 
                             <form 
-                                action="https://formsubmit.co/o2plusno20171011@gmail.com" 
+                                action="https://formsubmit.co/info@o2plusno2017.com" 
                                 method="POST"
                                 className="space-y-8 relative z-10"
                             >

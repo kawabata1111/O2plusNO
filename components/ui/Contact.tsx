@@ -71,7 +71,7 @@ export default function Contact() {
                                     <Mail size={16} />
                                     <span className="text-[10px] font-cinzel tracking-widest font-bold">DATA_PACKET / メール</span>
                                 </div>
-                                <p className="text-sm sm:text-base md:text-lg font-bold tracking-wider font-mono text-slate-800 break-all">o2plusno20171011@gmail.com</p>
+                                <p className="text-sm sm:text-base md:text-lg font-bold tracking-wider font-mono text-slate-800 break-all">info@o2plusno2017.com</p>
                             </div>
                         </div>
 
